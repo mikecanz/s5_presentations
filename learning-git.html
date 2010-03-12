@@ -1,0 +1,542 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Learning git | March 2010</title>
+<!-- metadata -->
+<meta name="generator" content="S5" />
+<meta name="version" content="S5 1.1" />
+<meta name="presdate" content="20050728" />
+<meta name="author" content="Mike Canzoneri" />
+<meta name="company" content="Synacor" />
+<!-- configuration parameters -->
+<meta name="defaultView" content="slideshow" />
+<meta name="controlVis" content="hidden" />
+<!-- style sheet links -->
+<link rel="stylesheet" href="ui/black/slides.css" type="text/css" media="projection" id="slideProj" />
+<link rel="stylesheet" href="ui/black/outline.css" type="text/css" media="screen" id="outlineStyle" />
+<link rel="stylesheet" href="ui/black/print.css" type="text/css" media="print" id="slidePrint" />
+<link rel="stylesheet" href="ui/black/opera.css" type="text/css" media="projection" id="operaFix" />
+<!-- S5 JS -->
+<script src="ui/black/slides.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="layout">
+<div id="controls"><!-- DO NOT EDIT --></div>
+<div id="currentSlide"><!-- DO NOT EDIT --></div>
+<div id="header"></div>
+<div id="footer">
+<h2>Learning git</h2>
+</div>
+
+</div>
+
+
+<div class="presentation">
+
+<div class="slide">
+<h1>Learning git</h1>
+<h3>Mike Canz(oneri)</h3>
+<h4>Release Engineer at Synacor</h4>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 70px;">
+Propaganda
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 70px;">
+CVS, SVN, ...
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 70px;">
+Now git?
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 70px;">
+Who else is using this?
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<h1>From Wikipedia</h1>
+(Amarok) (Android) (Arch Linux) (Aquamacs Emacs) (BlueZ) (Btrfs) (Clojure) (CakePHP) (Digg) (DragonFly BSD) (Elinks) (Fedora) (FFmpeg) (Freenet) (GIMP) (GNOME) (GPM) (GStreamer) (gThumb) (GTK+) (Hurd) (jQuery) (Laika (EHR testing framework)) (LilyPond (music typesetting)) (Linux kernel) (Linux Mint) (LMMS Music Production Software) (Maemo) (Merb) (MooTools) (One Laptop Per Child (OLPC)) (OpenFOAM) (openSUSE) (Parrot virtual machine) (Perl) (phpBB) (Prototype.js) (Qt) (Reddit) (rsync) (Ruby on Rails) (Samba) (SproutCore) (Sugar) (SWI-Prolog) (VLC) (Wine) (Xiph) (X.org Server) (x264) (YUI)
+</div>
+
+
+<div class="slide">
+<h1>From Wikipedia</h1>
+(Amarok) (Android) (Arch Linux) (Aquamacs Emacs) (BlueZ) (Btrfs) (Clojure) (CakePHP) (Digg) (DragonFly BSD) (Elinks) (Fedora) (FFmpeg) (Freenet) (GIMP) (GNOME) (GPM) (GStreamer) (gThumb) (GTK+) (Hurd) <span style="color:red">(jQuery)</span> (Laika (EHR testing framework)) (LilyPond (music typesetting)) <span style="color:red">(Linux kernel)</span> (Linux Mint) (LMMS Music Production Software) (Maemo) (Merb) (MooTools) (One Laptop Per Child (OLPC)) (OpenFOAM) (openSUSE) (Parrot virtual machine) <span style="color:red">(Perl)</span> (phpBB) <span style="color:red">(Prototype.js)</span> (Qt) (Reddit) <span style="color:red">(rsync)</span> (Ruby on Rails) <span style="color:red">(Samba)</span> (SproutCore) (Sugar) (SWI-Prolog) (VLC) (Wine) (Xiph) (X.org Server) (x264) (YUI)
+</div>
+
+
+<div class="slide">
+Why would we use it?<br>
+<ul>
+<span class="incremental"><li>Branching<br></span>
+<span class="incremental"><li>Sharing<br></span>
+<span class="incremental"><li>Teams <span class="incremental">(Branching)</span><br></span>
+<span class="incremental"><li>Developing out of order <span class="incremental">(Branching)</span><br></span>
+</ul>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 70px;">
+But I heard that git was hard.
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 70px;">
+That's crazy talk.
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 70px;">
+Git is easy.
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<center>
+<img src="pix/Git-transport.png">
+</center>
+</div>
+
+
+<div class="slide">
+<center>
+<img src="pix/git-diagram.png">
+</center>
+</div>
+
+
+<div class="slide">
+<center>
+<img src="pix/dinner.jpg">
+</center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 50px;">
+Git is easy in the same way people sitting around a table having a conversation is easy.
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 70px;">
+We loosed the forced order of a central system...
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 70px;">
+...but there is a big return.
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 40px;">
+A lot of development problems move from a technical space (Can I commit yet?) to a communication space (When will you merge my work?).
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 70px;">
+This is how OS development happened anyway.
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 70px;">
+So...
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 70px;">
+...let us move on.
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 70px;">
+Creating a repo
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 70px;">
+git init
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 70px;">
+Working tree,<br><span class="incremental">index/stage/cache,<span><br><span class="incremental">and history</span>
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 70px;">
+Make a file and add it to the index.
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 70px;">
+Interacting with the index.
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 70px;">
+Commit
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 70px;">
+git log
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 70px;">
+Make a few more commits.
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+What does it mean to be a git repo?<br>
+<ul>
+<span class="incremental"><li>Each repo is a first class citizen.</span>
+<span class="incremental"><li>You cause communication to happen.</span>
+<span class="incremental"><li>All the history is local.</span>
+</ul>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 70px;">
+Where is the repo data?<br>
+<span class="incremental">(.git)</span>
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 70px;">
+This is great but we want to work with other people.
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<center>
+<img src='pix/clones.jpg'>
+<center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 40px;">
+git clone <br> git01.dev:/home/git/devs/mcanz/git-training
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 70px;">
+Branching
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 70px;">
+git branch
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 50px;">
+git checkout -b<br>NEW_BRANCH<br>OLD_BRNACH
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 70px;">
+Make some commits.
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 70px;">
+Merge to master
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 70px;">
+Remotes
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 70px;">
+git remote add ALIAS URI
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 70px;">
+This only adds an alias
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 70px;">
+git fetch ALIAS
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 70px;">
+git branch -a
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<center>
+<img src="pix/light-bulb.jpg">
+</center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 70px;">
+End of new concepts.
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 70px;">
+So what did they do?
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 70px;">
+git diff ...REMOTE/BRANCH
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 70px;">
+2 and 3 dot notation.
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 70px;">
+With log it's flipped.
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<br><br><br>
+<center>
+<span style="font-size: 70px;">
+A word on bit rot.
+</span>
+</center>
+</div>
+
+
+<div class="slide">
+<center>
+<img src='pix/highfive.png'>
+<center>
+</div>
+
+<div class="handout">
+[any material that should appear in print but not on the slide]
+</div>
+</div>
+
+
+</div>
+
+</body>
+</html>
