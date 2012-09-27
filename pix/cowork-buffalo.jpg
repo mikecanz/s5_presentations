@@ -1,0 +1,512 @@
+<!DOCTYPE html><html lang="en" xml:lang="en" class="" xmlns="http://www.w3.org/1999/xhtml"><head><script type="text/javascript">window._document_observe_listeners = [];
+document.observe = function(event, func) {
+window._document_observe_listeners.push({event: event, func: func});
+                };
+
+window._jquery_ready_handlers = [];
+jQuery = function(handler) {
+window._jquery_ready_handlers.push(handler);
+                };
+
+function on_script_loaded(func) {
+(window.LoadedJsSuccessfully && document.loaded) ? func() : document.observe('script:loaded', func);
+                }</script><script type="text/javascript">window.ST=+new Date();</script><meta content="text/html; charset=UTF-8" http-equiv="content-type" /><meta content="Dropbox is a free service that lets you bring your photos, docs, and videos anywhere and share them easily. Never email yourself a file again!" name="description" /><meta content="online storage, free storage, file sharing, share files,
+               awesome, cloud storage, online backup, cross platform, sync, sharing, mac,
+               windows, os x, linux, backup, collaboration, file versioning, file revisions,
+               remote access, undelete" name="keywords" /><meta content="Beta Photos (by Nicholas Barone) - Dropbox" property="og:title" /><meta content=" " property="og:description" /><meta content="https://www.dropbox.com/static/images/icons128/folder_dropbox.png" property="og:image" /><meta content="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/Mt8peC1p5U" property="og:url" /><meta content="website" property="og:type" /><meta content="Dropbox" property="og:site_name" /><meta content="210019893730" property="fb:app_id" /><meta content="@Dropbox" name="twitter:site" /><meta content="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/Mt8peC1p5U" name="twitter:url" /><meta content="Beta Photos (by Nicholas Barone) - Dropbox" name="twitter:title" /><meta content=" " name="twitter:description" /><meta content="https://www.dropbox.com/static/images/icons128/folder_dropbox.png" name="twitter:image" /><meta content="TnuSyOnBMNmtugbpL1ZvW2PbSF9LKvoTzrvOGS9h-b0" name="google-site-verification" /><meta content="EZKIczQcM1-DVUMz8heu1dIhNtxNbLqbaA9-HbOnCQ4" name="google-site-verification" /><meta content="tz8iotmk-pkhui406y41y5bfmfxdwmaa4a-yc0hm6r0fga7s6j0j27qmgqkmc7oovihzghbzhbdjk-uiyrz438nxsjdbj3fggwgl8oq2nf4ko8gi7j4z7t78kegbidl4" name="norton-safeweb-site-verification" /><title>Dropbox - Beta Photos (by Nicholas Barone) - Simplify your life</title><link href="/static/33586/images/favicon.ico" rel="shortcut icon" /><link href="/static/_b-udEzizhUOiVn1q/css/main.css" type="text/css" rel="stylesheet" /><link href="/static/33586/images/dropbox_webclip.png" rel="apple-touch-icon" /><link href="/w3c/p3p.xml" rel="P3Pv1" /><script type="text/javascript">var Constants = {
+BLOCK_CLUSTER: 'dl\x2dweb\x2edropbox\x2ecom',
+PUBSERVER: 'dl\x2edropbox\x2ecom',
+WEBSERVER: 'www\x2edropbox\x2ecom',
+NOTSERVER: 'notify1\x2edropbox\x2ecom\x3a80',
+LIVE_TRANSCODE_SERVER: 'showbox\x2dtr\x2edropbox\x2ecom',
+DISABLE_VIDEO_ICONS: false,
+DISABLE_VIDEOS_IN_LIGHTBOX: false,
+block: 'dl\x2dweb\x2edropbox\x2ecom',
+protocol: 'https',
+uid: '',
+email: '',
+sess_id: '124084812808370788717840173829511321931',
+root_ns: 0,
+SVN_REV: '33586',
+TOKEN: '',
+IS_PROD: 1,
+WIT_ENABLED: 0,
+WEB_TIMING_ENABLED: 1,
+RK_TEST3_ENABLED: 0,
+shmodal_contact_importer_enabled: 0,
+upload_debug: false,
+date_format: 'M\x2fd\x2fyyyy',
+time_format: 'h\x3amm\x20a',
+datetime_format: 'M\x2fd\x2fyyyy\x20h\x3amm\x20a',
+ADMIN: 0,
+can_undo: 0,
+referrer: '',
+TWO_ITEM_LIST: '\x25\x28x\x29s\x20and\x20\x25\x28y\x29s',
+THREE_ITEM_LIST: '\x25\x28x\x29s\x2c\x20\x25\x28y\x29s\x2c\x20and\x20\x25\x28z\x29s',
+LOCALES: [["en", "English"], ["es", "Espa\u00f1ol"], ["fr", "Fran\u00e7ais"], ["de", "Deutsch"], ["ja", "\u65e5\u672c\u8a9e"], ["ko", "\ud55c\uad6d\uc5b4"]],
+USER_LOCALE: 'en',
+EMAIL_VERIFIED: 0,
+                    };</script><script type="text/javascript">
+        function global_report_exception (e, f, l, tb, force) {
+            if (!window.reported_exception || force) {
+                var stack_str = "";
+                try {
+                    if (!tb) {
+                        var stack = get_stack_rep();
+                        stack.pop(); // remove global_report_exception
+                        stack.pop(); // remove onerror handler
+                        stack_str = stack.join("\n");
+                    }
+                } catch (e) { }
+                var log = function() {
+                    var parameters = {parameters: {
+                        'e': e,
+                        'f': f || window.location.href,
+                        'l': l,
+                        'loc': window.location.href,
+                        'ref': Constants.referrer,
+                        'tb': tb || stack_str,
+                        'trace': Trace && Trace.get()
+                    }};
+                    new Ajax.Request("/jse", parameters);
+                }
+                if (typeof(Ajax) == 'undefined') {
+                    document.observe('script:loaded', log);
+                } else {
+                    log();
+                }
+                window.reported_exception = true;
+           }
+        }
+
+        // this constant gets set to true at the bottom of dropbox.js
+        window.LoadedJsSuccessfully = false;
+        window.onerror = function (e, f, l) {
+            global_report_exception(e, f, l);
+        };
+
+        var old_onload = window.onload;
+        window.onload = function() {
+            if (!window.LoadedJsSuccessfully) {
+                new Image().src = '/jse?e=failed+to+load+script&loc=' + encodeURIComponent(window.location.href);
+            }
+            old_onload && old_onload();
+        }
+</script><script defer="defer" src="/static/_ZpUOs2EFxYj5Dmd9/javascript/compiled/dropbox-mini.js" type="text/javascript" async="async"></script><style type="text/css">.hny-stcw { display: none; }</style><!--[if lte IE 8]><style>.sick-input input[type=password] {
+padding-top: 7px !important;
+padding-bottom: 3px !important;
+                }
+.sick-input.small input {
+padding-top: 4px !important;
+padding-bottom: 2px !important;
+                }
+.sick-input.small input[type=password] {
+padding-top: 6px !important;
+padding-bottom: 0px !important;
+                }</style><![endif]--><!--[if lt IE 9]><script src="/static/javascript/external/html5shiv.js"></script><![endif]--><meta content="noindex" name="robots" /><script>
+
+                if (self != top) {
+                    top.location.replace(self.location.href);
+                    setTimeout(function() {
+                        document.body.innerHTML = (
+                            "<img src='https://www.dropbox.com/static/images/logo.png' onClick='top.location.href=window.location.href' />");
+                    }, 1);
+                }
+            
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-279179-2']);
+_gaq.push(['_setDomainName', document.domain]);
+_gaq.push(['_trackPageview']);
+
+// Defer so this doesn't block onload.
+window.setTimeout(function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    var src_prefix = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www');
+    ga.src = src_prefix + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+}, 0);</script></head><body class="en shmodel-body deferred-resources file-preview-body nonempty-folder"><div style="display: none;" id="modal-behind"></div><div style="display: none;" id="modal"><div id="modal-box"><a href="#" id="modal-x" onclick="javascript: Modal.hide(); Event.stop(event); return false;"></a><h2 id="modal-title"></h2><div id="modal-content"></div></div></div><div style="display: none;" id="modal-overlay" onclick="Modal.hide(); Event.stop(event); return false;"></div><div id="floaters"></div><div style="display:none" id="trash-can"></div><div style="display:none" id="grave-yard"></div><div style="display: none;" class="external-drop-indicator top"></div><div style="display: none;" class="external-drop-indicator right"></div><div style="display: none;" class="external-drop-indicator bottom"></div><div style="display: none;" class="external-drop-indicator left"></div><div style="display:none; margin-bottom: -10px" id="translate-div"><form action="/translation_suggest" onsubmit="TranslationSuggest.submit_suggest(event); return false;" method="POST" id="translation-suggest-form"><input type="hidden" name="locale" value="en" /><input type="hidden" name="locale_url" value="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/Mt8peC1p5U" /><input type="hidden" name="msg_id" value="" id="translation-msg-id" /><p class="clean"><label for="bad_text">Please paste or type the improper translation</label></p><div id="part-one"><p><span style="display: none" id="bad-i18n-text-error" class="error-message">We could not find that string on this page.</span><textarea class="act_as_block textinput" rows="3" cols="40" id="bad-i18n-text" name="bad_text"></textarea></p><div id="bad-i18n-text-complete" class="autocomplete"></div></div><div id="part-two"><div style="margin-bottom: 10px" id="translation-msg-display" class="emo hotbox"></div><p class="clean">Original English text</p><div style="margin-bottom: 10px" id="translation-orig-msg-display" class="green-hotbox"></div><p class="clean"><label for="suggested_text">Suggested translation</label></p><p><textarea rows="3" cols="40" name="suggested_text" class="textinput act_as_block"></textarea></p><p class="clean"><label for="explanation">Explanation of the problem</label></p><p><textarea rows="3" cols="40" name="explanation" class="textinput act_as_block"></textarea></p><div class="modal-buttons"><input onclick="TranslationSuggest.start_wizard(event);return false;" type="button" id="translation-back-button" value="Back" class="freshbutton" /><input type="submit" onclick="TranslationSuggest.submit_suggest(event); return false;" value="Suggest translation" class="freshbutton-blue" /></div></div></form></div><div id="notify-wrapper"><span style="display: none;" id="notify"><span id="notify-msg">Sorry, there was a problem loading this page.</span></span></div><div id="outer-frame"><div style="display:none;" id="modal-locale-selector"><ul><li><a data-locale="en" class="locale-option">English</a></li><li><a data-locale="es" class="locale-option">Español</a></li><li><a data-locale="fr" class="locale-option">Français</a></li><li><a data-locale="de" class="locale-option">Deutsch</a></li><li><a data-locale="ja" class="locale-option">日本語</a></li><li><a data-locale="ko" class="locale-option">한국어</a></li></ul></div><div id="page-content"><div class="nav-header"><a href="//www.dropbox.com?src=shmodel" target="_top" class="logo"><img src="/static/33586/images/new_logo_shmodel_2x.png" alt="Dropbox" class="big" /><img src="/static/33586/images/new_logo_shmodel.png" alt="Dropbox" class="small" /></a><div class="filename shmodel-filename"><span id="emsnippet-88e08481e466ac26"></span></div><div class="buttons"><a id="create-an-account-button" href="/register?signup_tag=shmodel" target="_blank" class="freshbutton-blue">Create a Dropbox account</a><a href="#" class="freshbutton-lightblue freshdropdown-button" onclick="SharingModel.toggle_dropdown(event, $('download-menu'), $('download-menu-button'))" id="download-menu-button">Download<img src="/static/images/icons/icon_spacer.gif" style="" class=" sprite sprite_web s_web_login_arrow" /></a><div style="display: none;" id="download-menu" class="chat-bubble freshdropdown-menu"><ul><li><a href="https://dl.dropbox.com/shz/uy0r6tkwvei8m7q/Mt8peC1p5U/Beta Photos (by Nicholas Barone)?top_level_offset=14" id="download_button_link" onclick="SharingModel.hide_dropdown_menus()"><img src="/static/images/icons/icon_spacer.gif" style="" class=" sprite sprite_web s_web_download_arrow" />Download as .zip</a></li><li><a class="a2md-button" onclick="SharingModel.show_c2d_modal(); return false;" id="add_to_my_dropbox_link"><img src="/static/images/icons/icon_spacer.gif" style="" class=" sprite sprite_web s_web_dropbox" />Add to my Dropbox</a></li></ul></div><div id="account-header"><ul class="nav"><li><div id="top-login-wrapper"><a href="/login" id="login-hover-link"><img src="/static/images/icons/icon_spacer.gif" style="" class="link-img sprite sprite_web s_web_door_in link-img" />Sign in<img src="/static/images/icons/icon_spacer.gif" style="padding: 0; margin-left: 2px; margin-top: -1px;" class="link-img sprite sprite_web s_web_login_arrow link-img" id="login-hover-dropdown-icon" /></a><div id="login-hover-cont" class="offscreen chat-bubble"><form action="https://www.dropbox.com/login" method="post"><div class="sick-input small"><label for="login_email_elm">Email</label><input type="text" id="login_email_elm" name="login_email" tabindex="1" /></div><div class="sick-input small"><label for="login_password_elm">Password</label><input type="password" id="login_password_elm" name="login_password" tabindex="2" /></div><p style="margin-bottom: 0.5em; line-height: 28px;"><input style="vertical-align: middle; margin-left: 0;" name="remember_me" class="no-border" type="checkbox" id="remember_me" tabindex="3" /><label style="vertical-align: middle; cursor: pointer; " for="remember_me">Remember me</label><input tabindex="4" type="submit" class="freshbutton-blue" value="Sign in" id="toplogin-submit" /><input type="hidden" name="cont" value="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/Mt8peC1p5U" /></p><p class="create-account"><a href="/register" id="login-create-an-account">Create an account</a></p></form><div class="chat-bubble-arrow-border"></div><div class="chat-bubble-arrow"></div></div></div></li></ul></div></div></div><div id="shmodel-content-area"><div class="filename-below shmodel-filename"><span id="emsnippet-20c17e6db114ca6b"></span></div><div id="content-wrapper"><div id="top-bar"><h3 id="folder-title" class="shmodel-filename"><span id="emsnippet-32be39e4a7f018ef"></span></h3><div id="gallery-list-toggle"><a class="selected" onclick="SharingModel.switch_mode('gallery'); return false;" id="gallery-toggle"><div id="gallery-icon"><img src="/static/images/icons/icon_spacer.gif" style="" class=" sprite sprite_web s_web_toggle_grid" /></div></a><a class="" onclick="SharingModel.switch_mode('list'); return false;" id="list-toggle"><div id="list-icon"><img src="/static/images/icons/icon_spacer.gif" style="" class=" sprite sprite_web s_web_toggle_list" /></div></a></div></div><div style="display: none" id="list-view-container" class="gallery-view-section"><div id="list-view-header" class="list-view-cols clearfix"><div class="filename-col">Name</div><div class="filesize-col">Size</div><div class="modified-col">Modified</div></div><ol class="browse-files gallery-list-view"><li class="browse-file list-view-cols"><div class="filename-col"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/vbUMios-oz/1%20-%20Outside%20Door%20on%20Delaware.JPG" target="_top" class="thumb-link" onclick="FilePreviewModal.show(0); return false;" rel="nofollow"><img src="/static/images/icons/icon_spacer.gif" style="" class="icon sprite sprite_web s_web_page_white_picture_32 icon" data-src="https://photos-1.dropbox.com/t/0/AAAVOhOjYXPctj24lUsEFWPOhKd9D7-Z0kH6kIyDesoHAg/10/112488/jpeg/32x32/1/1348768800/0/2/1%20-%20Outside%20Door%20on%20Delaware.JPG/nqc44xjE4QkdmAKt3G50Udjg22rY4KpR8WaFk7CbP5s" /></a><div class="filename"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/vbUMios-oz/1%20-%20Outside%20Door%20on%20Delaware.JPG" target="_top" class="filename-link" onclick="FilePreviewModal.show(0); return false;" rel="nofollow"><span id="emsnippet-bf5be8d052b21ab1"></span></a></div></div><div class="filesize-col"><span class="size">2.92 MB</span></div><div class="modified-col"><span><span class="modified-time">4 months ago</span></span></div><br class="clear" /></li><li class="browse-file list-view-cols"><div class="filename-col"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/SR9GfZfs9F/2%20-%20Hallway.JPG" target="_top" class="thumb-link" onclick="FilePreviewModal.show(1); return false;" rel="nofollow"><img src="/static/images/icons/icon_spacer.gif" style="" class="icon sprite sprite_web s_web_page_white_picture_32 icon" data-src="https://photos-1.dropbox.com/t/0/AAAMj8tuss1GusBDMv08AyxdgNiIMtpW95vW_cG2KGIuRw/10/112488/jpeg/32x32/1/1348768800/0/2/2%20-%20Hallway.JPG/_UMYaMkOk9Bpacghe0Lt2dfC6NPwpItWp03Cj7mXHu8" /></a><div class="filename"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/SR9GfZfs9F/2%20-%20Hallway.JPG" target="_top" class="filename-link" onclick="FilePreviewModal.show(1); return false;" rel="nofollow"><span id="emsnippet-f2e6d76ed26f1d2e"></span></a></div></div><div class="filesize-col"><span class="size">2.42 MB</span></div><div class="modified-col"><span><span class="modified-time">4 months ago</span></span></div><br class="clear" /></li><li class="browse-file list-view-cols"><div class="filename-col"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/g-ocis7jUQ/3%20-%20Front%20Door.JPG" target="_top" class="thumb-link" onclick="FilePreviewModal.show(2); return false;" rel="nofollow"><img src="/static/images/icons/icon_spacer.gif" style="" class="icon sprite sprite_web s_web_page_white_picture_32 icon" data-src="https://photos-1.dropbox.com/t/0/AAAk6TNvTrDVVHX14GgKJaoSsWj7r9sIDvDC6IF2mz57-A/10/112488/jpeg/32x32/1/1348768800/0/2/3%20-%20Front%20Door.JPG/6M2Lt4u6puVgEb6terpZozZLoUUyiX8K_i6xRSL3fSE" /></a><div class="filename"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/g-ocis7jUQ/3%20-%20Front%20Door.JPG" target="_top" class="filename-link" onclick="FilePreviewModal.show(2); return false;" rel="nofollow"><span id="emsnippet-6ed68eebac987cbb"></span></a></div></div><div class="filesize-col"><span class="size">2.97 MB</span></div><div class="modified-col"><span><span class="modified-time">4 months ago</span></span></div><br class="clear" /></li><li class="browse-file list-view-cols"><div class="filename-col"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/ed8nAIOgJY/DSC05905.JPG" target="_top" class="thumb-link" onclick="FilePreviewModal.show(3); return false;" rel="nofollow"><img src="/static/images/icons/icon_spacer.gif" style="" class="icon sprite sprite_web s_web_page_white_picture_32 icon" data-src="https://photos-5.dropbox.com/t/0/AAAotsmsbcRT1AzeuQc6vTnDQouE4kauvFrKkZTTsjfPfA/10/112488/jpeg/32x32/1/1348768800/0/2/DSC05905.JPG/fJJf_nkGpvfkAqj9a_ze16JTo_T68CvQyLoTx65tRXg" /></a><div class="filename"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/ed8nAIOgJY/DSC05905.JPG" target="_top" class="filename-link" onclick="FilePreviewModal.show(3); return false;" rel="nofollow"><span id="emsnippet-604a55eb044dac43"></span></a></div></div><div class="filesize-col"><span class="size">2.45 MB</span></div><div class="modified-col"><span><span class="modified-time">4 months ago</span></span></div><br class="clear" /></li><li class="browse-file list-view-cols"><div class="filename-col"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/3oPlKHwC8l/DSC05906.JPG" target="_top" class="thumb-link" onclick="FilePreviewModal.show(4); return false;" rel="nofollow"><img src="/static/images/icons/icon_spacer.gif" style="" class="icon sprite sprite_web s_web_page_white_picture_32 icon" data-src="https://photos-1.dropbox.com/t/0/AAAtlxAq-N9-PjBy09H7uNw4qKGLBRuDN1MEk5R_alj-ag/10/112488/jpeg/32x32/1/1348768800/0/2/DSC05906.JPG/YD-gOiPaATHlYC_kYzGM3OaaQXkQYqgnyNjBfvRtn8U" /></a><div class="filename"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/3oPlKHwC8l/DSC05906.JPG" target="_top" class="filename-link" onclick="FilePreviewModal.show(4); return false;" rel="nofollow"><span id="emsnippet-b0e41f57e76cb8e7"></span></a></div></div><div class="filesize-col"><span class="size">1.61 MB</span></div><div class="modified-col"><span><span class="modified-time">4 months ago</span></span></div><br class="clear" /></li><li class="browse-file list-view-cols"><div class="filename-col"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/aeEsOTtyv2/DSC05908.JPG" target="_top" class="thumb-link" onclick="FilePreviewModal.show(5); return false;" rel="nofollow"><img src="/static/images/icons/icon_spacer.gif" style="" class="icon sprite sprite_web s_web_page_white_picture_32 icon" data-src="https://photos-3.dropbox.com/t/0/AAAcs8FHDvs8iaDnEkzJvVy6nOvUc68LNaKkp945o0Twvg/10/112488/jpeg/32x32/1/1348768800/0/2/DSC05908.JPG/CYxWA6v56goX0BNiM6IP2iYbq1BlEivsSOv3HiVjp7c" /></a><div class="filename"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/aeEsOTtyv2/DSC05908.JPG" target="_top" class="filename-link" onclick="FilePreviewModal.show(5); return false;" rel="nofollow"><span id="emsnippet-6ff84a03ac28e53c"></span></a></div></div><div class="filesize-col"><span class="size">2.04 MB</span></div><div class="modified-col"><span><span class="modified-time">4 months ago</span></span></div><br class="clear" /></li><li class="browse-file list-view-cols"><div class="filename-col"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/a5AM_2OozF/DSC05910.JPG" target="_top" class="thumb-link" onclick="FilePreviewModal.show(6); return false;" rel="nofollow"><img src="/static/images/icons/icon_spacer.gif" style="" class="icon sprite sprite_web s_web_page_white_picture_32 icon" data-src="https://photos-5.dropbox.com/t/0/AAB-E5kOeJTw9hMI_5nqvZe5He6aPy33vzivByDu1rNG0w/10/112488/jpeg/32x32/1/1348768800/0/2/DSC05910.JPG/ZDaiCo7PbK4TVVkZJqEV4MwdNa_SZElOyPT0P85NZUY" /></a><div class="filename"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/a5AM_2OozF/DSC05910.JPG" target="_top" class="filename-link" onclick="FilePreviewModal.show(6); return false;" rel="nofollow"><span id="emsnippet-f1ce25f3bad31dbd"></span></a></div></div><div class="filesize-col"><span class="size">1.32 MB</span></div><div class="modified-col"><span><span class="modified-time">4 months ago</span></span></div><br class="clear" /></li><li class="browse-file list-view-cols"><div class="filename-col"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/FlV6oNfWEw/DSC05915.JPG" target="_top" class="thumb-link" onclick="FilePreviewModal.show(7); return false;" rel="nofollow"><img src="/static/images/icons/icon_spacer.gif" style="" class="icon sprite sprite_web s_web_page_white_picture_32 icon" data-src="https://photos-4.dropbox.com/t/0/AABzRkzaHxUKv8G4ABMBxZBUcFVc4_TcFWQp5rI4_kytZA/10/112488/jpeg/32x32/1/1348768800/0/2/DSC05915.JPG/1j74hDZSJrC_xJKn-zPCvXaD3sWBpTmX5K0fiU1BDuQ" /></a><div class="filename"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/FlV6oNfWEw/DSC05915.JPG" target="_top" class="filename-link" onclick="FilePreviewModal.show(7); return false;" rel="nofollow"><span id="emsnippet-231a4f9981be3a16"></span></a></div></div><div class="filesize-col"><span class="size">3.46 MB</span></div><div class="modified-col"><span><span class="modified-time">4 months ago</span></span></div><br class="clear" /></li><li class="browse-file list-view-cols"><div class="filename-col"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/_s9i9AS9Jd/DSC05918.JPG" target="_top" class="thumb-link" onclick="FilePreviewModal.show(8); return false;" rel="nofollow"><img src="/static/images/icons/icon_spacer.gif" style="" class="icon sprite sprite_web s_web_page_white_picture_32 icon" data-src="https://photos-5.dropbox.com/t/0/AAD6Z5vZ42ozRwyWYrBb5UEbYc9zUUk7-P4SdDltIF0rcw/10/112488/jpeg/32x32/1/1348768800/0/2/DSC05918.JPG/gknxZ9ogSRCMtnC36vz7hOzj-8_WIG6agV2EqbpxoLc" /></a><div class="filename"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/_s9i9AS9Jd/DSC05918.JPG" target="_top" class="filename-link" onclick="FilePreviewModal.show(8); return false;" rel="nofollow"><span id="emsnippet-7114842ca6f5a5d0"></span></a></div></div><div class="filesize-col"><span class="size">3.65 MB</span></div><div class="modified-col"><span><span class="modified-time">4 months ago</span></span></div><br class="clear" /></li><li class="browse-file list-view-cols"><div class="filename-col"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/-kFTdYfTem/DSC05925.JPG" target="_top" class="thumb-link" onclick="FilePreviewModal.show(9); return false;" rel="nofollow"><img src="/static/images/icons/icon_spacer.gif" style="" class="icon sprite sprite_web s_web_page_white_picture_32 icon" data-src="https://photos-2.dropbox.com/t/0/AADLX1Yj4H_K2cRpvGraijn2_nDnaNAe7y89ubzPFqKG-w/10/112488/jpeg/32x32/1/1348768800/0/2/DSC05925.JPG/EzIdG4VPrBM7c9nvmh5y5naB3VBdm9raVyCba8_FAFI" /></a><div class="filename"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/-kFTdYfTem/DSC05925.JPG" target="_top" class="filename-link" onclick="FilePreviewModal.show(9); return false;" rel="nofollow"><span id="emsnippet-f871d0ace354681f"></span></a></div></div><div class="filesize-col"><span class="size">2.43 MB</span></div><div class="modified-col"><span><span class="modified-time">4 months ago</span></span></div><br class="clear" /></li><li class="browse-file list-view-cols"><div class="filename-col"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/mmewh1ZD2F/DSC05926.JPG" target="_top" class="thumb-link" onclick="FilePreviewModal.show(10); return false;" rel="nofollow"><img src="/static/images/icons/icon_spacer.gif" style="" class="icon sprite sprite_web s_web_page_white_picture_32 icon" data-src="https://photos-1.dropbox.com/t/0/AAAIgHex9vwX2Igpm3pPwn_BHfbHd1C4gCa8EHKOcz8THg/10/112488/jpeg/32x32/1/1348768800/0/2/DSC05926.JPG/8q8Ylex-xpMuA413IUod6mJAYGLooPlyAvmmaBKshig" /></a><div class="filename"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/mmewh1ZD2F/DSC05926.JPG" target="_top" class="filename-link" onclick="FilePreviewModal.show(10); return false;" rel="nofollow"><span id="emsnippet-5784887b2a53e531"></span></a></div></div><div class="filesize-col"><span class="size">1.89 MB</span></div><div class="modified-col"><span><span class="modified-time">4 months ago</span></span></div><br class="clear" /></li><li class="browse-file list-view-cols"><div class="filename-col"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/6qzr1g9EmA/DSC05928.JPG" target="_top" class="thumb-link" onclick="FilePreviewModal.show(11); return false;" rel="nofollow"><img src="/static/images/icons/icon_spacer.gif" style="" class="icon sprite sprite_web s_web_page_white_picture_32 icon" data-src="https://photos-4.dropbox.com/t/0/AABydAUyqx4UK45kYLEhd0pfNXoqatFM5AfwQ5Q9-0t-TA/10/112488/jpeg/32x32/1/1348768800/0/2/DSC05928.JPG/A32_UYtZtoyHSe2HmjE9DgKd9iwZTLiAyxq2NUJ2giw" /></a><div class="filename"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/6qzr1g9EmA/DSC05928.JPG" target="_top" class="filename-link" onclick="FilePreviewModal.show(11); return false;" rel="nofollow"><span id="emsnippet-7bcc8a69f2da86d5"></span></a></div></div><div class="filesize-col"><span class="size">2.72 MB</span></div><div class="modified-col"><span><span class="modified-time">4 months ago</span></span></div><br class="clear" /></li><li class="browse-file list-view-cols"><div class="filename-col"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/z7AWEUM1vM/DSC05933.JPG" target="_top" class="thumb-link" onclick="FilePreviewModal.show(12); return false;" rel="nofollow"><img src="/static/images/icons/icon_spacer.gif" style="" class="icon sprite sprite_web s_web_page_white_picture_32 icon" data-src="https://photos-5.dropbox.com/t/0/AABq3-p0q78AsrGeqS2KNCNpJQxtUscFy-6II2L-yEkj3w/10/112488/jpeg/32x32/1/1348768800/0/2/DSC05933.JPG/I2udfKPV8AMYDzhksrOsZ9WOwZi7gEac1p7Ldlw9o-8" /></a><div class="filename"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/z7AWEUM1vM/DSC05933.JPG" target="_top" class="filename-link" onclick="FilePreviewModal.show(12); return false;" rel="nofollow"><span id="emsnippet-9bf02b3202a4462a"></span></a></div></div><div class="filesize-col"><span class="size">3.01 MB</span></div><div class="modified-col"><span><span class="modified-time">4 months ago</span></span></div><br class="clear" /></li><li class="browse-file list-view-cols"><div class="filename-col"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/viWglqjj7h/DSC05938.JPG" target="_top" class="thumb-link" onclick="FilePreviewModal.show(13); return false;" rel="nofollow"><img src="/static/images/icons/icon_spacer.gif" style="" class="icon sprite sprite_web s_web_page_white_picture_32 icon" data-src="https://photos-2.dropbox.com/t/0/AACDfsTFNV2GwPL6BBs4KyQBX5mAlI47zqndvUGz2B6mag/10/112488/jpeg/32x32/1/1348768800/0/2/DSC05938.JPG/BZUBNQSDjwO7dxxauOKJJAu0YE0luurM19rqvm9xatA" /></a><div class="filename"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/viWglqjj7h/DSC05938.JPG" target="_top" class="filename-link" onclick="FilePreviewModal.show(13); return false;" rel="nofollow"><span id="emsnippet-94c6b4a15d6ba08d"></span></a></div></div><div class="filesize-col"><span class="size">1.73 MB</span></div><div class="modified-col"><span><span class="modified-time">4 months ago</span></span></div><br class="clear" /></li><li class="browse-file list-view-cols"><div class="filename-col"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/tfmTW2tLK5/DSC05940.JPG" target="_top" class="thumb-link" onclick="FilePreviewModal.show(14); return false;" rel="nofollow"><img src="/static/images/icons/icon_spacer.gif" style="" class="icon sprite sprite_web s_web_page_white_picture_32 icon" data-src="https://photos-3.dropbox.com/t/0/AADUlozlzF0nSE56QueGvbuyDc13yRcivdOMvuUHHwdLKw/10/112488/jpeg/32x32/1/1348768800/0/2/DSC05940.JPG/WRmOHs-OF6YwywDpcxdWLL_Hkfkc2dEnX22eWluOfcg" /></a><div class="filename"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/tfmTW2tLK5/DSC05940.JPG" target="_top" class="filename-link" onclick="FilePreviewModal.show(14); return false;" rel="nofollow"><span id="emsnippet-af2944530d3392b8"></span></a></div></div><div class="filesize-col"><span class="size">2.29 MB</span></div><div class="modified-col"><span><span class="modified-time">4 months ago</span></span></div><br class="clear" /></li><li class="browse-file list-view-cols"><div class="filename-col"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/7xfMs6FH33/DSC05953.JPG" target="_top" class="thumb-link" onclick="FilePreviewModal.show(15); return false;" rel="nofollow"><img src="/static/images/icons/icon_spacer.gif" style="" class="icon sprite sprite_web s_web_page_white_picture_32 icon" data-src="https://photos-6.dropbox.com/t/0/AAA-Q1X8ep_ZulmyW_8WlrUwyg9v1BRQJ7QtOB4MOzkvAg/10/112488/jpeg/32x32/1/1348768800/0/2/DSC05953.JPG/RkXbDz16r3dFgPXpDKNmjjYq87Y9LtOA-3HzhIUbULE" /></a><div class="filename"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/7xfMs6FH33/DSC05953.JPG" target="_top" class="filename-link" onclick="FilePreviewModal.show(15); return false;" rel="nofollow"><span id="emsnippet-7b08d227d6b751a1"></span></a></div></div><div class="filesize-col"><span class="size">2.71 MB</span></div><div class="modified-col"><span><span class="modified-time">4 months ago</span></span></div><br class="clear" /></li></ol></div><div style="" id="gallery-view-container"><ol id="gallery-view-media" class="gallery-view-section gallery-icon-view clearfix"><li style="position:relative"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/vbUMios-oz/1%20-%20Outside%20Door%20on%20Delaware.JPG" target="_top" onclick="FilePreviewModal.show(0); return false;"><img data-src="https://photos-1.dropbox.com/t/0/AAAVOhOjYXPctj24lUsEFWPOhKd9D7-Z0kH6kIyDesoHAg/10/112488/jpeg/178x178/1/1348768800/0/2/1%20-%20Outside%20Door%20on%20Delaware.JPG/nqc44xjE4QkdmAKt3G50Udjg22rY4KpR8WaFk7CbP5s" data-fail-src="/static/33586/images/preview_fail.png" /></a></li><li style="position:relative"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/SR9GfZfs9F/2%20-%20Hallway.JPG" target="_top" onclick="FilePreviewModal.show(1); return false;"><img data-src="https://photos-1.dropbox.com/t/0/AAAMj8tuss1GusBDMv08AyxdgNiIMtpW95vW_cG2KGIuRw/10/112488/jpeg/178x178/1/1348768800/0/2/2%20-%20Hallway.JPG/_UMYaMkOk9Bpacghe0Lt2dfC6NPwpItWp03Cj7mXHu8" data-fail-src="/static/33586/images/preview_fail.png" /></a></li><li style="position:relative"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/g-ocis7jUQ/3%20-%20Front%20Door.JPG" target="_top" onclick="FilePreviewModal.show(2); return false;"><img data-src="https://photos-5.dropbox.com/t/0/AAAk6TNvTrDVVHX14GgKJaoSsWj7r9sIDvDC6IF2mz57-A/10/112488/jpeg/178x178/1/1348768800/0/2/3%20-%20Front%20Door.JPG/6M2Lt4u6puVgEb6terpZozZLoUUyiX8K_i6xRSL3fSE" data-fail-src="/static/33586/images/preview_fail.png" /></a></li><li style="position:relative"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/ed8nAIOgJY/DSC05905.JPG" target="_top" onclick="FilePreviewModal.show(3); return false;"><img data-src="https://photos-5.dropbox.com/t/0/AAAotsmsbcRT1AzeuQc6vTnDQouE4kauvFrKkZTTsjfPfA/10/112488/jpeg/178x178/1/1348768800/0/2/DSC05905.JPG/fJJf_nkGpvfkAqj9a_ze16JTo_T68CvQyLoTx65tRXg" data-fail-src="/static/33586/images/preview_fail.png" /></a></li><li style="position:relative"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/3oPlKHwC8l/DSC05906.JPG" target="_top" onclick="FilePreviewModal.show(4); return false;"><img data-src="https://photos-3.dropbox.com/t/0/AAAtlxAq-N9-PjBy09H7uNw4qKGLBRuDN1MEk5R_alj-ag/10/112488/jpeg/178x178/1/1348768800/0/2/DSC05906.JPG/YD-gOiPaATHlYC_kYzGM3OaaQXkQYqgnyNjBfvRtn8U" data-fail-src="/static/33586/images/preview_fail.png" /></a></li><li style="position:relative"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/aeEsOTtyv2/DSC05908.JPG" target="_top" onclick="FilePreviewModal.show(5); return false;"><img data-src="https://photos-5.dropbox.com/t/0/AAAcs8FHDvs8iaDnEkzJvVy6nOvUc68LNaKkp945o0Twvg/10/112488/jpeg/178x178/1/1348768800/0/2/DSC05908.JPG/CYxWA6v56goX0BNiM6IP2iYbq1BlEivsSOv3HiVjp7c" data-fail-src="/static/33586/images/preview_fail.png" /></a></li><li style="position:relative"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/a5AM_2OozF/DSC05910.JPG" target="_top" onclick="FilePreviewModal.show(6); return false;"><img data-src="https://photos-3.dropbox.com/t/0/AAB-E5kOeJTw9hMI_5nqvZe5He6aPy33vzivByDu1rNG0w/10/112488/jpeg/178x178/1/1348768800/0/2/DSC05910.JPG/ZDaiCo7PbK4TVVkZJqEV4MwdNa_SZElOyPT0P85NZUY" data-fail-src="/static/33586/images/preview_fail.png" /></a></li><li style="position:relative"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/FlV6oNfWEw/DSC05915.JPG" target="_top" onclick="FilePreviewModal.show(7); return false;"><img data-src="https://photos-4.dropbox.com/t/0/AABzRkzaHxUKv8G4ABMBxZBUcFVc4_TcFWQp5rI4_kytZA/10/112488/jpeg/178x178/1/1348768800/0/2/DSC05915.JPG/1j74hDZSJrC_xJKn-zPCvXaD3sWBpTmX5K0fiU1BDuQ" data-fail-src="/static/33586/images/preview_fail.png" /></a></li><li style="position:relative"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/_s9i9AS9Jd/DSC05918.JPG" target="_top" onclick="FilePreviewModal.show(8); return false;"><img data-src="https://photos-1.dropbox.com/t/0/AAD6Z5vZ42ozRwyWYrBb5UEbYc9zUUk7-P4SdDltIF0rcw/10/112488/jpeg/178x178/1/1348768800/0/2/DSC05918.JPG/gknxZ9ogSRCMtnC36vz7hOzj-8_WIG6agV2EqbpxoLc" data-fail-src="/static/33586/images/preview_fail.png" /></a></li><li style="position:relative"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/-kFTdYfTem/DSC05925.JPG" target="_top" onclick="FilePreviewModal.show(9); return false;"><img data-src="https://photos-2.dropbox.com/t/0/AADLX1Yj4H_K2cRpvGraijn2_nDnaNAe7y89ubzPFqKG-w/10/112488/jpeg/178x178/1/1348768800/0/2/DSC05925.JPG/EzIdG4VPrBM7c9nvmh5y5naB3VBdm9raVyCba8_FAFI" data-fail-src="/static/33586/images/preview_fail.png" /></a></li><li style="position:relative"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/mmewh1ZD2F/DSC05926.JPG" target="_top" onclick="FilePreviewModal.show(10); return false;"><img data-src="https://photos-1.dropbox.com/t/0/AAAIgHex9vwX2Igpm3pPwn_BHfbHd1C4gCa8EHKOcz8THg/10/112488/jpeg/178x178/1/1348768800/0/2/DSC05926.JPG/8q8Ylex-xpMuA413IUod6mJAYGLooPlyAvmmaBKshig" data-fail-src="/static/33586/images/preview_fail.png" /></a></li><li style="position:relative"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/6qzr1g9EmA/DSC05928.JPG" target="_top" onclick="FilePreviewModal.show(11); return false;"><img data-src="https://photos-4.dropbox.com/t/0/AABydAUyqx4UK45kYLEhd0pfNXoqatFM5AfwQ5Q9-0t-TA/10/112488/jpeg/178x178/1/1348768800/0/2/DSC05928.JPG/A32_UYtZtoyHSe2HmjE9DgKd9iwZTLiAyxq2NUJ2giw" data-fail-src="/static/33586/images/preview_fail.png" /></a></li><li style="position:relative"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/z7AWEUM1vM/DSC05933.JPG" target="_top" onclick="FilePreviewModal.show(12); return false;"><img data-src="https://photos-5.dropbox.com/t/0/AABq3-p0q78AsrGeqS2KNCNpJQxtUscFy-6II2L-yEkj3w/10/112488/jpeg/178x178/1/1348768800/0/2/DSC05933.JPG/I2udfKPV8AMYDzhksrOsZ9WOwZi7gEac1p7Ldlw9o-8" data-fail-src="/static/33586/images/preview_fail.png" /></a></li><li style="position:relative"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/viWglqjj7h/DSC05938.JPG" target="_top" onclick="FilePreviewModal.show(13); return false;"><img data-src="https://photos-2.dropbox.com/t/0/AACDfsTFNV2GwPL6BBs4KyQBX5mAlI47zqndvUGz2B6mag/10/112488/jpeg/178x178/1/1348768800/0/2/DSC05938.JPG/BZUBNQSDjwO7dxxauOKJJAu0YE0luurM19rqvm9xatA" data-fail-src="/static/33586/images/preview_fail.png" /></a></li><li style="position:relative"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/tfmTW2tLK5/DSC05940.JPG" target="_top" onclick="FilePreviewModal.show(14); return false;"><img data-src="https://photos-1.dropbox.com/t/0/AADUlozlzF0nSE56QueGvbuyDc13yRcivdOMvuUHHwdLKw/10/112488/jpeg/178x178/1/1348768800/0/2/DSC05940.JPG/WRmOHs-OF6YwywDpcxdWLL_Hkfkc2dEnX22eWluOfcg" data-fail-src="/static/33586/images/preview_fail.png" /></a></li><li style="position:relative"><a href="https://www.dropbox.com/sh/uy0r6tkwvei8m7q/7xfMs6FH33/DSC05953.JPG" target="_top" onclick="FilePreviewModal.show(15); return false;"><img data-src="https://photos-4.dropbox.com/t/0/AAA-Q1X8ep_ZulmyW_8WlrUwyg9v1BRQJ7QtOB4MOzkvAg/10/112488/jpeg/178x178/1/1348768800/0/2/DSC05953.JPG/RkXbDz16r3dFgPXpDKNmjjYq87Y9LtOA-3HzhIUbULE" data-fail-src="/static/33586/images/preview_fail.png" /></a></li></ol></div><a href="/copyright_complaint_form?stoken=uy0r6tkwvei8m7q&amp;spath=&amp;shash=Mt8peC1p5U" class="content-flag title_bubble" rel="nofollow" title="Flag for copyright">Flag for copyright</a></div></div>
+<div id="twitter-login" style="display:none;">
+    <form action="#" onsubmit="Twitter.login(); return false">
+        <div class="center">
+            <img src="/static/images/twitter_logo.jpg" alt="twitter"/>
+            <p id="twitter-status" style="margin-top:1.5em;">Before you can tweet this link, we need to connect to your Twitter account.</p>
+            <p style="margin: 1.5em 0 3.5em 0;">
+                <a href="#" onclick="Twitter.do_auth(); return false;">
+                    <img src="/static/images/twitter_signin.png" alt=""/>
+                </a>
+            </p>
+            <div class="modal-buttons">
+                I've finished signing in to Twitter
+                <input type="button" class="freshbutton-blue" onclick="Twitter.onLoginSuccessCallback();" value="Tweet my message"/>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div id="facebook-auth" style="display:none;">
+    <div class="center">
+        <img src="/static/images/facebook_logo.jpg" alt="facebook"/>
+        <p id="facebook-status" style="margin-top:1.5em;">Before you can post this link, we need to connect to your Facebook account.</p>
+        <p style="margin: 1.5em 0 3.5em 0;">
+            <a href="#" onclick="FacebookOAuth.do_auth(); return false;">
+                <img src="/static/images/facebook_signin.png" alt=""/>
+            </a>
+        </p>
+        <div class="modal-buttons">
+            I've finished signing in to Facebook <input  style="margin-left: 0.5em;margin-bottom: -1px;" type="button" class="freshbutton-blue" onclick="Modal.vars.action();" value="Post my message"/>
+        </div>
+    </div>
+</div>
+
+<div id="twitter-posting" style="display:none;">
+    <div class="center">
+        <img src="/static/images/twitter_logo.jpg" alt="Twitter"/>
+        <h3 style="margin-top: 3em;"><img src="/static/images/icons/ajax-loading-small.gif" class="h2-img" alt=""/>Tweeting</h3>
+    </div>
+</div>
+<div id="facebook-posting" style="display:none;">
+    <div class="center">
+        <br /><br />
+        <img src="/static/images/facebook_logo.jpg" alt="Facebook"/>
+        <br /><br />
+        <h3><img src="/static/images/icons/ajax-loading-small.gif" class="h2-img" alt=""/>Posting to Facebook</h3>
+        <br />
+    </div>
+</div>
+
+<div id="disable-token-modal" style="display:none;">
+    <p>Are you sure you want to remove this link? Once the link is removed, nobody else will be able to view this file or folder.</p>
+    <div class="modal-buttons">
+        <input type="button" value="Remove link" onclick="SharingModel.do_remove(Modal.vars);" class="freshbutton-blue" />
+        <input type="button" value="Cancel" onclick="Modal.hide();" class="freshbutton" />
+    </div>
+</div>
+
+<div id="c2d-modal" style="display: none;">
+    <ul id="c2d-modal-tabs" class="modal-tabs clearfix">
+        <li><a href="#" class="selected" id="create-account">Create an account</a></li>
+        <li><a href="#" id="login-account">Sign in</a></li>
+    </ul>
+    <div id="create-account-content">
+        <p>
+            Once you register for Dropbox, this file or folder will be instantly saved to your Dropbox and downloaded to all the computers linked to your account.
+        </p>
+        <br />
+        <div>
+            <form id="c2d-register-form">
+              <input type="hidden" name="signup_tag" value="copy_to_dropbox" />
+              <input type="hidden" name="dl_redir" value="1" />
+
+
+
+
+
+<div id="register-partial">
+      
+<div class="error-plain-text" style="display:none;">
+  <form:error name="fname" />
+</div>
+
+<div id="fname-field" class="sick-input">
+  
+  <input type="text" name="fname" id="fname" tabindex="5"/>
+  <label id="fname-label" for="fname">First name</label>
+</div>
+
+      
+<div class="error-plain-text" style="display:none;">
+  <form:error name="lname" />
+</div>
+
+<div id="lname-field" class="sick-input">
+  
+  <input type="text" name="lname" id="lname" tabindex="6"/>
+  <label id="lname-label" for="lname">Last name</label>
+</div>
+
+
+  <div class="register-spacer"></div>
+
+  
+<div class="error-plain-text" style="display:none;">
+  <form:error name="email" />
+</div>
+
+  <div id="new-email-field" class="sick-input clearfix">
+    
+    <input
+      type="text"
+      id="email"
+      name="email"
+      value=""
+      tabindex="7"
+    />
+    <label id="new-email-label" for="email">Email</label>
+    <script type="text/javascript">
+      on_script_loaded(function() {
+          new MailCheck('email', 'email_check_warning');
+      });
+    </script>
+    <div id="email_check_warning" style="display: none;">
+    </div>
+  </div>
+
+  
+<div class="error-plain-text" style="display:none;">
+  <form:error name="password" />
+</div>
+
+  <div id="new-password-field" class="sick-input">
+    
+    <input type="password" id="password" name="password" tabindex="8" />
+    <label id="new-password-label" for="password">Password</label>
+    <script type="text/javascript" charset="utf-8" src="/static/33586/javascript/password_strength.js">
+    </script>
+    <script type="text/javascript">
+      on_script_loaded(function () {
+          PasswordStrength.watch("password");
+      });
+    </script>
+  </div>
+
+    <div id="register-footer">
+
+      <div id="tos-agree-field">
+        
+<div class="error-plain-text" style="display:none;">
+  <form:error name="tos_agree" />
+</div>
+
+        <input type="checkbox"
+               name="tos_agree"
+               id="tos_agree"
+               tabindex="9"
+               />
+        <label for="tos_agree">
+          I agree to <a href="/terms" target="_blank">Dropbox Terms</a>
+        </label>
+        
+      </div>
+
+          <input type="submit"
+                 id="register-submit"
+                 name="register-submit"
+                 class="freshbutton-blue one-submit-at-a-time"
+                 value="Create account"
+                 tabindex="10"
+                 />
+     </div>
+</div>
+<br class="clear" />
+            </form>
+        </div>
+    </div>
+    <div id="login-account-content" style="display:none;">
+        <div id="c2d-login">
+            <p>
+              Once you sign in to Dropbox, this file or folder will be instantly saved to your Dropbox and downloaded to all the computers linked to your account.
+            </p>
+            <br />
+            <form id="c2d-login-form">
+                <table id="login-table">
+                    <tr>
+                        <td>
+                          
+<div class="error-plain-text" style="display:none;">
+  <form:error name="login_email" />
+</div>
+
+                          <div class="sick-input">
+                            <label for="email">Email</label>
+                            <input type="text" name="login_email" autocomplete="off" tabindex="13" />
+                          </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 0;">
+                            
+<div class="error-plain-text" style="display:none;">
+  <form:error name="login_password" />
+</div>
+
+                            <div class="sick-input">
+                              <label for="password">Password</label>
+                              <input type="password" name="login_password" autocomplete="off" tabindex="14"/>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input style="float:right" type="submit" id="login_submit" name="login_submit" class="freshbutton-blue" value="Sign in" tabindex="15" />
+
+                      </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div id="c2d-twofactor-login" style="display: none;">
+            <p class="c2d-header">
+                Enter security code
+            </p>
+            <p>
+                We sent a security code to your phone ending in <span class="last-four-digits"></span>.
+            </p>
+            <br />
+            <form id="c2d-twofactor-login-form">
+                <div id="c2d-twofactor-error" class="error-message"></div>
+                <div class="sick-input">
+                    <label for="email" >6-digit code</label>
+                    <input type="text" id="c2d-twofactor-code" name="twofactor_code" autocomplete="off" tabindex="13" />
+                </div>
+                <input type="submit" id="twofactor_login_submit" name="twofactor_login_submit" class="freshbutton-blue" value="Submit code" tabindex="15" />
+                <p class="resend-code">
+                    <a id="c2d-resend-link">Didn't receive one?</a>
+                </p>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" charset="utf-8">
+        document.observe("script:loaded", function () {
+            window.c2d_tabs = new TabController("c2d-modal-tabs", {
+               url_prefix: false
+            });
+        });
+    </script>
+</div>
+
+<div id="sharing-progress" style="display: none;">
+    <div class="orange-hotbox">
+        <img src="/static/images/icons/ajax-loader-trans.gif" alt=""/>
+        Sharing...
+    </div>
+</div>
+<div id="sharing-posted" style="display: none;">
+    <div class="green-hotbox">
+        <table>
+            <tr>
+                <td>Message shared!</td>
+                <td style="width: 5px;"></td>
+                <td><a target="_blank" id="view-post"></a></td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div id="sharing-posted-both" style="display: none;">
+    <div class="green-hotbox">
+        <table>
+            <tbody>
+                <tr>
+                    <td>Link shared!</td>
+                    <td style="width: 5px;"></td>
+                    <td><a target="_blank" id="view-post" href="http://www.twitter.com/"><img src="&#47;static&#47;images&#47;icons&#47;icon_spacer.gif" alt="" class="sprite sprite_web  s_web_twitter " />View tweet</a></td>
+                    <td style="width: 5px;"></td>
+                    <td><a target="_blank" id="view-post" href="http://www.facebook.com/profile.php?v=wall"><img src="&#47;static&#47;images&#47;icons&#47;icon_spacer.gif" alt="" class="sprite sprite_web  s_web_facebook " />View post</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div id="inline-facebook-auth" style="display:none;">
+    <div class="orange-hotbox">
+        You need to <a id="connect-with-facebook">connect with Facebook</a> first.
+    </div>
+</div>
+<div id="inline-twitter-auth" style="display:none;">
+    <div class="orange-hotbox">
+        You need to <a id="connect-with-twitter">connect with Twitter</a> first.
+    </div>
+</div>
+
+<script>
+  document.observe('script:loaded', function() {
+    Util.live_jag('inline-facebook-auth', 'connect-with-facebook', 'onclick', "FacebookOAuth.do_auth(); return false;");
+    Util.live_jag('inline-twitter-auth', 'connect-with-twitter', 'onclick', "Twitter.do_auth(); return false;");
+  });
+</script>
+<div id="file-preview-modal" style="display:none;">
+    <div class="header">
+        <a class='close' href="#"><img src="&#47;static&#47;images&#47;icons&#47;icon_spacer.gif" alt="" class="sprite sprite_web  s_web_white_x " /></a>
+    </div>
+    <div class="preview">
+        <table><tr><td class='preview-container'>
+            <div class='preview-content'></div>
+        </td></tr></table>
+    </div>
+    <div id="file-preview-menu" class="menu">
+        <div class="filename">&nbsp;</div>
+        <div class="actions">&nbsp;</div>
+        <div class="paging">
+            <a href="#" class='prev'><img src="&#47;static&#47;images&#47;icons&#47;icon_spacer.gif" alt="" class="sprite sprite_web  s_web_arrow_left_white " /></a>
+            <span class='current_index'> </span> of <span class='total'>&nbsp;</span>
+            <a href="#" class='next'><img src="&#47;static&#47;images&#47;icons&#47;icon_spacer.gif" alt="" class="sprite sprite_web  s_web_arrow_right_white " /></a>
+        </div>
+    </div>
+    <div class="delete-file-prompt chat-bubble-bottom" style="display:none;">
+        <input type="button" class="freshbutton-blue" value="Delete" id="lightbox-delete-photo"/><br/>
+        <input type="button" class="freshbutton" value="Cancel" id="lightbox-delete-cancel"/>
+        <div class="chat-bubble-arrow-border"></div>
+        <div class="chat-bubble-arrow"></div>
+    </div>
+</div>
+
+</div><noscript><p class="center">The Dropbox website requires JavaScript.</p></noscript></div><!--[if IE]><iframe onload="on_script_loaded(function() { HashKeeper.reloading=false; });" style="display: none" name="hashkeeper" src="/blank" height="1" width="1" id="hashkeeper"></iframe><![endif]--><div style="position: absolute; top: 0; left: 0; font-family: Courier" id="ieconsole"></div><div style="position:absolute; top:-10000px;width:0px; height:0px; left: 0;" id="FB_HiddenContainer"></div><div style="display:none;" id="notice-container" class="clearfix"></div><script src="/static/33586/javascript/logger.js" type="text/javascript"></script><script>
+
+        document.observe("dom:loaded", function() {
+           TranslationSuggest.attach_autocomplete();
+           Util.focus('');
+           Util.check_cookies_enabled();
+           WebTimingLogger.init();
+        });
+        
+
+        document.observe("dom:loaded", function() {
+            TranslationSuggest.update_i18n_messages({});
+        });
+        </script><script>if (document.observe) {
+document.observe('script:loaded', function() {
+SharingModel.init('Beta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29', Util.from_json('\x7b\x22item\x5fid\x22\x3a\x20\x22\x22\x2c\x20\x22secure\x5fhash\x22\x3a\x20\x22Mt8peC1p5U\x22\x2c\x20\x22subpath\x22\x3a\x20\x22\x22\x2c\x20\x22tkey\x22\x3a\x20\x22uy0r6tkwvei8m7q\x22\x7d'))
+SharingModel.init_folder(1, 1, '\x5b\x7b\x22thumbnail\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fphotos\x2d2\x2edropbox\x2ecom\x2ft\x2f0\x2fAADdYeRZ3Epiv0TKx3VsFmf3juYd9kPLvjL1I5pSssIVsg\x2f10\x2f112488\x2fjpeg\x2f32x32\x2f2\x2f1348768800\x2f0\x2f2\x2f1\x2520\x2d\x2520Outside\x2520Door\x2520on\x2520Delaware\x2eJPG\x2fnqc44xjE4QkdmAKt3G50Udjg22rY4KpR8WaFk7CbP5s\x22\x2c\x20\x22shmodel\x5flink\x22\x3a\x20\x22https\x3a\x2f\x2fwww\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2fvbUMios\x2doz\x2f1\x2520\x2d\x2520Outside\x2520Door\x2520on\x2520Delaware\x2eJPG\x22\x2c\x20\x22orig\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fdl\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2fvbUMios\x2doz\x2f1\x2520\x2d\x2520Outside\x2520Door\x2520on\x2520Delaware\x2eJPG\x22\x2c\x20\x22path\x22\x3a\x20\x22\x2fCoworkBuffalo\x2fBeta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29\x2f1\x20\x2d\x20Outside\x20Door\x20on\x20Delaware\x2eJPG\x22\x2c\x20\x22is\x5fvideo\x22\x3a\x20false\x2c\x20\x22preview\x5furl\x22\x3a\x20null\x2c\x20\x22filename\x22\x3a\x20\x221\x20\x2d\x20Outside\x20Door\x20on\x20Delaware\x2eJPG\x22\x7d\x2c\x20\x7b\x22thumbnail\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fphotos\x2d3\x2edropbox\x2ecom\x2ft\x2f0\x2fAAA8f1q7zMf5DZ7hOmj\x2dbHcJISc\x2druw54lJRtNlutEjseg\x2f10\x2f112488\x2fjpeg\x2f32x32\x2f2\x2f1348768800\x2f0\x2f2\x2f2\x2520\x2d\x2520Hallway\x2eJPG\x2f\x5fUMYaMkOk9Bpacghe0Lt2dfC6NPwpItWp03Cj7mXHu8\x22\x2c\x20\x22shmodel\x5flink\x22\x3a\x20\x22https\x3a\x2f\x2fwww\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2fSR9GfZfs9F\x2f2\x2520\x2d\x2520Hallway\x2eJPG\x22\x2c\x20\x22orig\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fdl\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2fSR9GfZfs9F\x2f2\x2520\x2d\x2520Hallway\x2eJPG\x22\x2c\x20\x22path\x22\x3a\x20\x22\x2fCoworkBuffalo\x2fBeta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29\x2f2\x20\x2d\x20Hallway\x2eJPG\x22\x2c\x20\x22is\x5fvideo\x22\x3a\x20false\x2c\x20\x22preview\x5furl\x22\x3a\x20null\x2c\x20\x22filename\x22\x3a\x20\x222\x20\x2d\x20Hallway\x2eJPG\x22\x7d\x2c\x20\x7b\x22thumbnail\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fphotos\x2d4\x2edropbox\x2ecom\x2ft\x2f0\x2fAABcDmCiPz0VTTvU9hQD7u9E\x5fluiK55L3J5aG6bWVt7r6A\x2f10\x2f112488\x2fjpeg\x2f32x32\x2f2\x2f1348768800\x2f0\x2f2\x2f3\x2520\x2d\x2520Front\x2520Door\x2eJPG\x2f6M2Lt4u6puVgEb6terpZozZLoUUyiX8K\x5fi6xRSL3fSE\x22\x2c\x20\x22shmodel\x5flink\x22\x3a\x20\x22https\x3a\x2f\x2fwww\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2fg\x2docis7jUQ\x2f3\x2520\x2d\x2520Front\x2520Door\x2eJPG\x22\x2c\x20\x22orig\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fdl\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2fg\x2docis7jUQ\x2f3\x2520\x2d\x2520Front\x2520Door\x2eJPG\x22\x2c\x20\x22path\x22\x3a\x20\x22\x2fCoworkBuffalo\x2fBeta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29\x2f3\x20\x2d\x20Front\x20Door\x2eJPG\x22\x2c\x20\x22is\x5fvideo\x22\x3a\x20false\x2c\x20\x22preview\x5furl\x22\x3a\x20null\x2c\x20\x22filename\x22\x3a\x20\x223\x20\x2d\x20Front\x20Door\x2eJPG\x22\x7d\x2c\x20\x7b\x22thumbnail\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fphotos\x2d1\x2edropbox\x2ecom\x2ft\x2f0\x2fAAB8JygCOubx9PgI8sK97t5DIhXPKvmddJcqGBQBIayEKw\x2f10\x2f112488\x2fjpeg\x2f32x32\x2f2\x2f1348768800\x2f0\x2f2\x2fDSC05905\x2eJPG\x2ffJJf\x5fnkGpvfkAqj9a\x5fze16JTo\x5fT68CvQyLoTx65tRXg\x22\x2c\x20\x22shmodel\x5flink\x22\x3a\x20\x22https\x3a\x2f\x2fwww\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2fed8nAIOgJY\x2fDSC05905\x2eJPG\x22\x2c\x20\x22orig\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fdl\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2fed8nAIOgJY\x2fDSC05905\x2eJPG\x22\x2c\x20\x22path\x22\x3a\x20\x22\x2fCoworkBuffalo\x2fBeta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29\x2fDSC05905\x2eJPG\x22\x2c\x20\x22is\x5fvideo\x22\x3a\x20false\x2c\x20\x22preview\x5furl\x22\x3a\x20null\x2c\x20\x22filename\x22\x3a\x20\x22DSC05905\x2eJPG\x22\x7d\x2c\x20\x7b\x22thumbnail\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fphotos\x2d5\x2edropbox\x2ecom\x2ft\x2f0\x2fAAAiKq\x5flL1lIRX2lNBKWpat9Aqt0LNRMPZBjoYHHB\x2dnbdg\x2f10\x2f112488\x2fjpeg\x2f32x32\x2f2\x2f1348768800\x2f0\x2f2\x2fDSC05906\x2eJPG\x2fYD\x2dgOiPaATHlYC\x5fkYzGM3OaaQXkQYqgnyNjBfvRtn8U\x22\x2c\x20\x22shmodel\x5flink\x22\x3a\x20\x22https\x3a\x2f\x2fwww\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2f3oPlKHwC8l\x2fDSC05906\x2eJPG\x22\x2c\x20\x22orig\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fdl\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2f3oPlKHwC8l\x2fDSC05906\x2eJPG\x22\x2c\x20\x22path\x22\x3a\x20\x22\x2fCoworkBuffalo\x2fBeta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29\x2fDSC05906\x2eJPG\x22\x2c\x20\x22is\x5fvideo\x22\x3a\x20false\x2c\x20\x22preview\x5furl\x22\x3a\x20null\x2c\x20\x22filename\x22\x3a\x20\x22DSC05906\x2eJPG\x22\x7d\x2c\x20\x7b\x22thumbnail\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fphotos\x2d6\x2edropbox\x2ecom\x2ft\x2f0\x2fAAAo1IlQ9LfWTdK35hXyDCSD3hW\x5f38kTbP0wNpzGKwPB9A\x2f10\x2f112488\x2fjpeg\x2f32x32\x2f2\x2f1348768800\x2f0\x2f2\x2fDSC05908\x2eJPG\x2fCYxWA6v56goX0BNiM6IP2iYbq1BlEivsSOv3HiVjp7c\x22\x2c\x20\x22shmodel\x5flink\x22\x3a\x20\x22https\x3a\x2f\x2fwww\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2faeEsOTtyv2\x2fDSC05908\x2eJPG\x22\x2c\x20\x22orig\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fdl\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2faeEsOTtyv2\x2fDSC05908\x2eJPG\x22\x2c\x20\x22path\x22\x3a\x20\x22\x2fCoworkBuffalo\x2fBeta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29\x2fDSC05908\x2eJPG\x22\x2c\x20\x22is\x5fvideo\x22\x3a\x20false\x2c\x20\x22preview\x5furl\x22\x3a\x20null\x2c\x20\x22filename\x22\x3a\x20\x22DSC05908\x2eJPG\x22\x7d\x2c\x20\x7b\x22thumbnail\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fphotos\x2d2\x2edropbox\x2ecom\x2ft\x2f0\x2fAAAguXsxhe\x5fUAx3F3gBtJnC6Hk8Edw8Off2kQd81X7Q4LQ\x2f10\x2f112488\x2fjpeg\x2f32x32\x2f2\x2f1348768800\x2f0\x2f2\x2fDSC05910\x2eJPG\x2fZDaiCo7PbK4TVVkZJqEV4MwdNa\x5fSZElOyPT0P85NZUY\x22\x2c\x20\x22shmodel\x5flink\x22\x3a\x20\x22https\x3a\x2f\x2fwww\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2fa5AM\x5f2OozF\x2fDSC05910\x2eJPG\x22\x2c\x20\x22orig\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fdl\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2fa5AM\x5f2OozF\x2fDSC05910\x2eJPG\x22\x2c\x20\x22path\x22\x3a\x20\x22\x2fCoworkBuffalo\x2fBeta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29\x2fDSC05910\x2eJPG\x22\x2c\x20\x22is\x5fvideo\x22\x3a\x20false\x2c\x20\x22preview\x5furl\x22\x3a\x20null\x2c\x20\x22filename\x22\x3a\x20\x22DSC05910\x2eJPG\x22\x7d\x2c\x20\x7b\x22thumbnail\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fphotos\x2d2\x2edropbox\x2ecom\x2ft\x2f0\x2fAADshbYhVFHQ7Tp8G\x5fbLtTopAKXp04N5aiIgdJMboooJfw\x2f10\x2f112488\x2fjpeg\x2f32x32\x2f2\x2f1348768800\x2f0\x2f2\x2fDSC05915\x2eJPG\x2f1j74hDZSJrC\x5fxJKn\x2dzPCvXaD3sWBpTmX5K0fiU1BDuQ\x22\x2c\x20\x22shmodel\x5flink\x22\x3a\x20\x22https\x3a\x2f\x2fwww\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2fFlV6oNfWEw\x2fDSC05915\x2eJPG\x22\x2c\x20\x22orig\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fdl\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2fFlV6oNfWEw\x2fDSC05915\x2eJPG\x22\x2c\x20\x22path\x22\x3a\x20\x22\x2fCoworkBuffalo\x2fBeta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29\x2fDSC05915\x2eJPG\x22\x2c\x20\x22is\x5fvideo\x22\x3a\x20false\x2c\x20\x22preview\x5furl\x22\x3a\x20null\x2c\x20\x22filename\x22\x3a\x20\x22DSC05915\x2eJPG\x22\x7d\x2c\x20\x7b\x22thumbnail\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fphotos\x2d6\x2edropbox\x2ecom\x2ft\x2f0\x2fAAChAkPgyfxhyyFpg1A38IzrHipHOCbyBfhAOpO5xbe8iA\x2f10\x2f112488\x2fjpeg\x2f32x32\x2f2\x2f1348768800\x2f0\x2f2\x2fDSC05918\x2eJPG\x2fgknxZ9ogSRCMtnC36vz7hOzj\x2d8\x5fWIG6agV2EqbpxoLc\x22\x2c\x20\x22shmodel\x5flink\x22\x3a\x20\x22https\x3a\x2f\x2fwww\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2f\x5fs9i9AS9Jd\x2fDSC05918\x2eJPG\x22\x2c\x20\x22orig\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fdl\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2f\x5fs9i9AS9Jd\x2fDSC05918\x2eJPG\x22\x2c\x20\x22path\x22\x3a\x20\x22\x2fCoworkBuffalo\x2fBeta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29\x2fDSC05918\x2eJPG\x22\x2c\x20\x22is\x5fvideo\x22\x3a\x20false\x2c\x20\x22preview\x5furl\x22\x3a\x20null\x2c\x20\x22filename\x22\x3a\x20\x22DSC05918\x2eJPG\x22\x7d\x2c\x20\x7b\x22thumbnail\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fphotos\x2d5\x2edropbox\x2ecom\x2ft\x2f0\x2fAADtgJVsrZoEznlSyFpeIpKeSTHG7wnyy\x2dPQjwgN\x5f\x5f0iKg\x2f10\x2f112488\x2fjpeg\x2f32x32\x2f2\x2f1348768800\x2f0\x2f2\x2fDSC05925\x2eJPG\x2fEzIdG4VPrBM7c9nvmh5y5naB3VBdm9raVyCba8\x5fFAFI\x22\x2c\x20\x22shmodel\x5flink\x22\x3a\x20\x22https\x3a\x2f\x2fwww\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2f\x2dkFTdYfTem\x2fDSC05925\x2eJPG\x22\x2c\x20\x22orig\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fdl\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2f\x2dkFTdYfTem\x2fDSC05925\x2eJPG\x22\x2c\x20\x22path\x22\x3a\x20\x22\x2fCoworkBuffalo\x2fBeta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29\x2fDSC05925\x2eJPG\x22\x2c\x20\x22is\x5fvideo\x22\x3a\x20false\x2c\x20\x22preview\x5furl\x22\x3a\x20null\x2c\x20\x22filename\x22\x3a\x20\x22DSC05925\x2eJPG\x22\x7d\x2c\x20\x7b\x22thumbnail\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fphotos\x2d5\x2edropbox\x2ecom\x2ft\x2f0\x2fAAANBmdhFtsbSoZpXjVwLQiOO7E3Sr3PdDcaiyb260niNA\x2f10\x2f112488\x2fjpeg\x2f32x32\x2f2\x2f1348768800\x2f0\x2f2\x2fDSC05926\x2eJPG\x2f8q8Ylex\x2dxpMuA413IUod6mJAYGLooPlyAvmmaBKshig\x22\x2c\x20\x22shmodel\x5flink\x22\x3a\x20\x22https\x3a\x2f\x2fwww\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2fmmewh1ZD2F\x2fDSC05926\x2eJPG\x22\x2c\x20\x22orig\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fdl\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2fmmewh1ZD2F\x2fDSC05926\x2eJPG\x22\x2c\x20\x22path\x22\x3a\x20\x22\x2fCoworkBuffalo\x2fBeta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29\x2fDSC05926\x2eJPG\x22\x2c\x20\x22is\x5fvideo\x22\x3a\x20false\x2c\x20\x22preview\x5furl\x22\x3a\x20null\x2c\x20\x22filename\x22\x3a\x20\x22DSC05926\x2eJPG\x22\x7d\x2c\x20\x7b\x22thumbnail\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fphotos\x2d6\x2edropbox\x2ecom\x2ft\x2f0\x2fAADhP6xBxipMtjgJ5KYfWC6ilFBetNU\x5f9x9nKqUB8p6cEw\x2f10\x2f112488\x2fjpeg\x2f32x32\x2f2\x2f1348768800\x2f0\x2f2\x2fDSC05928\x2eJPG\x2fA32\x5fUYtZtoyHSe2HmjE9DgKd9iwZTLiAyxq2NUJ2giw\x22\x2c\x20\x22shmodel\x5flink\x22\x3a\x20\x22https\x3a\x2f\x2fwww\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2f6qzr1g9EmA\x2fDSC05928\x2eJPG\x22\x2c\x20\x22orig\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fdl\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2f6qzr1g9EmA\x2fDSC05928\x2eJPG\x22\x2c\x20\x22path\x22\x3a\x20\x22\x2fCoworkBuffalo\x2fBeta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29\x2fDSC05928\x2eJPG\x22\x2c\x20\x22is\x5fvideo\x22\x3a\x20false\x2c\x20\x22preview\x5furl\x22\x3a\x20null\x2c\x20\x22filename\x22\x3a\x20\x22DSC05928\x2eJPG\x22\x7d\x2c\x20\x7b\x22thumbnail\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fphotos\x2d4\x2edropbox\x2ecom\x2ft\x2f0\x2fAAC8QkZunybksrge9wHrw1zAZ7YwQAUyoWuZVJGvxibiuA\x2f10\x2f112488\x2fjpeg\x2f32x32\x2f2\x2f1348768800\x2f0\x2f2\x2fDSC05933\x2eJPG\x2fI2udfKPV8AMYDzhksrOsZ9WOwZi7gEac1p7Ldlw9o\x2d8\x22\x2c\x20\x22shmodel\x5flink\x22\x3a\x20\x22https\x3a\x2f\x2fwww\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2fz7AWEUM1vM\x2fDSC05933\x2eJPG\x22\x2c\x20\x22orig\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fdl\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2fz7AWEUM1vM\x2fDSC05933\x2eJPG\x22\x2c\x20\x22path\x22\x3a\x20\x22\x2fCoworkBuffalo\x2fBeta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29\x2fDSC05933\x2eJPG\x22\x2c\x20\x22is\x5fvideo\x22\x3a\x20false\x2c\x20\x22preview\x5furl\x22\x3a\x20null\x2c\x20\x22filename\x22\x3a\x20\x22DSC05933\x2eJPG\x22\x7d\x2c\x20\x7b\x22thumbnail\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fphotos\x2d1\x2edropbox\x2ecom\x2ft\x2f0\x2fAACPezyOMzsvziBxLtoLHrwuJDIAmjrornnubaz3PLucKQ\x2f10\x2f112488\x2fjpeg\x2f32x32\x2f2\x2f1348768800\x2f0\x2f2\x2fDSC05938\x2eJPG\x2fBZUBNQSDjwO7dxxauOKJJAu0YE0luurM19rqvm9xatA\x22\x2c\x20\x22shmodel\x5flink\x22\x3a\x20\x22https\x3a\x2f\x2fwww\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2fviWglqjj7h\x2fDSC05938\x2eJPG\x22\x2c\x20\x22orig\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fdl\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2fviWglqjj7h\x2fDSC05938\x2eJPG\x22\x2c\x20\x22path\x22\x3a\x20\x22\x2fCoworkBuffalo\x2fBeta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29\x2fDSC05938\x2eJPG\x22\x2c\x20\x22is\x5fvideo\x22\x3a\x20false\x2c\x20\x22preview\x5furl\x22\x3a\x20null\x2c\x20\x22filename\x22\x3a\x20\x22DSC05938\x2eJPG\x22\x7d\x2c\x20\x7b\x22thumbnail\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fphotos\x2d4\x2edropbox\x2ecom\x2ft\x2f0\x2fAACNB\x5f5BXdQ4xyjshNVd0eUyLxGNIDSsYesFWFA1eLprkQ\x2f10\x2f112488\x2fjpeg\x2f32x32\x2f2\x2f1348768800\x2f0\x2f2\x2fDSC05940\x2eJPG\x2fWRmOHs\x2dOF6YwywDpcxdWLL\x5fHkfkc2dEnX22eWluOfcg\x22\x2c\x20\x22shmodel\x5flink\x22\x3a\x20\x22https\x3a\x2f\x2fwww\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2ftfmTW2tLK5\x2fDSC05940\x2eJPG\x22\x2c\x20\x22orig\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fdl\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2ftfmTW2tLK5\x2fDSC05940\x2eJPG\x22\x2c\x20\x22path\x22\x3a\x20\x22\x2fCoworkBuffalo\x2fBeta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29\x2fDSC05940\x2eJPG\x22\x2c\x20\x22is\x5fvideo\x22\x3a\x20false\x2c\x20\x22preview\x5furl\x22\x3a\x20null\x2c\x20\x22filename\x22\x3a\x20\x22DSC05940\x2eJPG\x22\x7d\x2c\x20\x7b\x22thumbnail\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fphotos\x2d4\x2edropbox\x2ecom\x2ft\x2f0\x2fAAApDD3nwEXZ4FHfen9RCwmnZoH2mBJPec\x2dVHb3Z\x2dzjAnA\x2f10\x2f112488\x2fjpeg\x2f32x32\x2f2\x2f1348768800\x2f0\x2f2\x2fDSC05953\x2eJPG\x2fRkXbDz16r3dFgPXpDKNmjjYq87Y9LtOA\x2d3HzhIUbULE\x22\x2c\x20\x22shmodel\x5flink\x22\x3a\x20\x22https\x3a\x2f\x2fwww\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2f7xfMs6FH33\x2fDSC05953\x2eJPG\x22\x2c\x20\x22orig\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fdl\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2f7xfMs6FH33\x2fDSC05953\x2eJPG\x22\x2c\x20\x22path\x22\x3a\x20\x22\x2fCoworkBuffalo\x2fBeta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29\x2fDSC05953\x2eJPG\x22\x2c\x20\x22is\x5fvideo\x22\x3a\x20false\x2c\x20\x22preview\x5furl\x22\x3a\x20null\x2c\x20\x22filename\x22\x3a\x20\x22DSC05953\x2eJPG\x22\x7d\x5d')
+$('emsnippet-88e08481e466ac26').innerHTML = 'Beta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29'.em_snippet(50, 0.750).escapeHTML();
+$('emsnippet-20c17e6db114ca6b').innerHTML = 'Beta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29'.em_snippet(35, 0.750).escapeHTML();
+$('emsnippet-32be39e4a7f018ef').innerHTML = 'Beta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29'.em_snippet(35, 0.750).escapeHTML();
+$('emsnippet-bf5be8d052b21ab1').innerHTML = '1\x20\x2d\x20Outside\x20Door\x20on\x20Delaware\x2eJPG'.em_snippet(40, 0.750).escapeHTML();
+$('emsnippet-f2e6d76ed26f1d2e').innerHTML = '2\x20\x2d\x20Hallway\x2eJPG'.em_snippet(40, 0.750).escapeHTML();
+$('emsnippet-6ed68eebac987cbb').innerHTML = '3\x20\x2d\x20Front\x20Door\x2eJPG'.em_snippet(40, 0.750).escapeHTML();
+$('emsnippet-604a55eb044dac43').innerHTML = 'DSC05905\x2eJPG'.em_snippet(40, 0.750).escapeHTML();
+$('emsnippet-b0e41f57e76cb8e7').innerHTML = 'DSC05906\x2eJPG'.em_snippet(40, 0.750).escapeHTML();
+$('emsnippet-6ff84a03ac28e53c').innerHTML = 'DSC05908\x2eJPG'.em_snippet(40, 0.750).escapeHTML();
+$('emsnippet-f1ce25f3bad31dbd').innerHTML = 'DSC05910\x2eJPG'.em_snippet(40, 0.750).escapeHTML();
+$('emsnippet-231a4f9981be3a16').innerHTML = 'DSC05915\x2eJPG'.em_snippet(40, 0.750).escapeHTML();
+$('emsnippet-7114842ca6f5a5d0').innerHTML = 'DSC05918\x2eJPG'.em_snippet(40, 0.750).escapeHTML();
+$('emsnippet-f871d0ace354681f').innerHTML = 'DSC05925\x2eJPG'.em_snippet(40, 0.750).escapeHTML();
+$('emsnippet-5784887b2a53e531').innerHTML = 'DSC05926\x2eJPG'.em_snippet(40, 0.750).escapeHTML();
+$('emsnippet-7bcc8a69f2da86d5').innerHTML = 'DSC05928\x2eJPG'.em_snippet(40, 0.750).escapeHTML();
+$('emsnippet-9bf02b3202a4462a').innerHTML = 'DSC05933\x2eJPG'.em_snippet(40, 0.750).escapeHTML();
+$('emsnippet-94c6b4a15d6ba08d').innerHTML = 'DSC05938\x2eJPG'.em_snippet(40, 0.750).escapeHTML();
+$('emsnippet-af2944530d3392b8').innerHTML = 'DSC05940\x2eJPG'.em_snippet(40, 0.750).escapeHTML();
+$('emsnippet-7b08d227d6b751a1').innerHTML = 'DSC05953\x2eJPG'.em_snippet(40, 0.750).escapeHTML();                        });
+                    } else if (window.jQuery) {
+jQuery(function () {
+SharingModel.init('Beta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29', Util.from_json('\x7b\x22item\x5fid\x22\x3a\x20\x22\x22\x2c\x20\x22secure\x5fhash\x22\x3a\x20\x22Mt8peC1p5U\x22\x2c\x20\x22subpath\x22\x3a\x20\x22\x22\x2c\x20\x22tkey\x22\x3a\x20\x22uy0r6tkwvei8m7q\x22\x7d'))
+SharingModel.init_folder(1, 1, '\x5b\x7b\x22thumbnail\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fphotos\x2d2\x2edropbox\x2ecom\x2ft\x2f0\x2fAADdYeRZ3Epiv0TKx3VsFmf3juYd9kPLvjL1I5pSssIVsg\x2f10\x2f112488\x2fjpeg\x2f32x32\x2f2\x2f1348768800\x2f0\x2f2\x2f1\x2520\x2d\x2520Outside\x2520Door\x2520on\x2520Delaware\x2eJPG\x2fnqc44xjE4QkdmAKt3G50Udjg22rY4KpR8WaFk7CbP5s\x22\x2c\x20\x22shmodel\x5flink\x22\x3a\x20\x22https\x3a\x2f\x2fwww\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2fvbUMios\x2doz\x2f1\x2520\x2d\x2520Outside\x2520Door\x2520on\x2520Delaware\x2eJPG\x22\x2c\x20\x22orig\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fdl\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2fvbUMios\x2doz\x2f1\x2520\x2d\x2520Outside\x2520Door\x2520on\x2520Delaware\x2eJPG\x22\x2c\x20\x22path\x22\x3a\x20\x22\x2fCoworkBuffalo\x2fBeta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29\x2f1\x20\x2d\x20Outside\x20Door\x20on\x20Delaware\x2eJPG\x22\x2c\x20\x22is\x5fvideo\x22\x3a\x20false\x2c\x20\x22preview\x5furl\x22\x3a\x20null\x2c\x20\x22filename\x22\x3a\x20\x221\x20\x2d\x20Outside\x20Door\x20on\x20Delaware\x2eJPG\x22\x7d\x2c\x20\x7b\x22thumbnail\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fphotos\x2d3\x2edropbox\x2ecom\x2ft\x2f0\x2fAAA8f1q7zMf5DZ7hOmj\x2dbHcJISc\x2druw54lJRtNlutEjseg\x2f10\x2f112488\x2fjpeg\x2f32x32\x2f2\x2f1348768800\x2f0\x2f2\x2f2\x2520\x2d\x2520Hallway\x2eJPG\x2f\x5fUMYaMkOk9Bpacghe0Lt2dfC6NPwpItWp03Cj7mXHu8\x22\x2c\x20\x22shmodel\x5flink\x22\x3a\x20\x22https\x3a\x2f\x2fwww\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2fSR9GfZfs9F\x2f2\x2520\x2d\x2520Hallway\x2eJPG\x22\x2c\x20\x22orig\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fdl\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2fSR9GfZfs9F\x2f2\x2520\x2d\x2520Hallway\x2eJPG\x22\x2c\x20\x22path\x22\x3a\x20\x22\x2fCoworkBuffalo\x2fBeta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29\x2f2\x20\x2d\x20Hallway\x2eJPG\x22\x2c\x20\x22is\x5fvideo\x22\x3a\x20false\x2c\x20\x22preview\x5furl\x22\x3a\x20null\x2c\x20\x22filename\x22\x3a\x20\x222\x20\x2d\x20Hallway\x2eJPG\x22\x7d\x2c\x20\x7b\x22thumbnail\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fphotos\x2d4\x2edropbox\x2ecom\x2ft\x2f0\x2fAABcDmCiPz0VTTvU9hQD7u9E\x5fluiK55L3J5aG6bWVt7r6A\x2f10\x2f112488\x2fjpeg\x2f32x32\x2f2\x2f1348768800\x2f0\x2f2\x2f3\x2520\x2d\x2520Front\x2520Door\x2eJPG\x2f6M2Lt4u6puVgEb6terpZozZLoUUyiX8K\x5fi6xRSL3fSE\x22\x2c\x20\x22shmodel\x5flink\x22\x3a\x20\x22https\x3a\x2f\x2fwww\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2fg\x2docis7jUQ\x2f3\x2520\x2d\x2520Front\x2520Door\x2eJPG\x22\x2c\x20\x22orig\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fdl\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2fg\x2docis7jUQ\x2f3\x2520\x2d\x2520Front\x2520Door\x2eJPG\x22\x2c\x20\x22path\x22\x3a\x20\x22\x2fCoworkBuffalo\x2fBeta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29\x2f3\x20\x2d\x20Front\x20Door\x2eJPG\x22\x2c\x20\x22is\x5fvideo\x22\x3a\x20false\x2c\x20\x22preview\x5furl\x22\x3a\x20null\x2c\x20\x22filename\x22\x3a\x20\x223\x20\x2d\x20Front\x20Door\x2eJPG\x22\x7d\x2c\x20\x7b\x22thumbnail\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fphotos\x2d1\x2edropbox\x2ecom\x2ft\x2f0\x2fAAB8JygCOubx9PgI8sK97t5DIhXPKvmddJcqGBQBIayEKw\x2f10\x2f112488\x2fjpeg\x2f32x32\x2f2\x2f1348768800\x2f0\x2f2\x2fDSC05905\x2eJPG\x2ffJJf\x5fnkGpvfkAqj9a\x5fze16JTo\x5fT68CvQyLoTx65tRXg\x22\x2c\x20\x22shmodel\x5flink\x22\x3a\x20\x22https\x3a\x2f\x2fwww\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2fed8nAIOgJY\x2fDSC05905\x2eJPG\x22\x2c\x20\x22orig\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fdl\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2fed8nAIOgJY\x2fDSC05905\x2eJPG\x22\x2c\x20\x22path\x22\x3a\x20\x22\x2fCoworkBuffalo\x2fBeta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29\x2fDSC05905\x2eJPG\x22\x2c\x20\x22is\x5fvideo\x22\x3a\x20false\x2c\x20\x22preview\x5furl\x22\x3a\x20null\x2c\x20\x22filename\x22\x3a\x20\x22DSC05905\x2eJPG\x22\x7d\x2c\x20\x7b\x22thumbnail\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fphotos\x2d5\x2edropbox\x2ecom\x2ft\x2f0\x2fAAAiKq\x5flL1lIRX2lNBKWpat9Aqt0LNRMPZBjoYHHB\x2dnbdg\x2f10\x2f112488\x2fjpeg\x2f32x32\x2f2\x2f1348768800\x2f0\x2f2\x2fDSC05906\x2eJPG\x2fYD\x2dgOiPaATHlYC\x5fkYzGM3OaaQXkQYqgnyNjBfvRtn8U\x22\x2c\x20\x22shmodel\x5flink\x22\x3a\x20\x22https\x3a\x2f\x2fwww\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2f3oPlKHwC8l\x2fDSC05906\x2eJPG\x22\x2c\x20\x22orig\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fdl\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2f3oPlKHwC8l\x2fDSC05906\x2eJPG\x22\x2c\x20\x22path\x22\x3a\x20\x22\x2fCoworkBuffalo\x2fBeta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29\x2fDSC05906\x2eJPG\x22\x2c\x20\x22is\x5fvideo\x22\x3a\x20false\x2c\x20\x22preview\x5furl\x22\x3a\x20null\x2c\x20\x22filename\x22\x3a\x20\x22DSC05906\x2eJPG\x22\x7d\x2c\x20\x7b\x22thumbnail\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fphotos\x2d6\x2edropbox\x2ecom\x2ft\x2f0\x2fAAAo1IlQ9LfWTdK35hXyDCSD3hW\x5f38kTbP0wNpzGKwPB9A\x2f10\x2f112488\x2fjpeg\x2f32x32\x2f2\x2f1348768800\x2f0\x2f2\x2fDSC05908\x2eJPG\x2fCYxWA6v56goX0BNiM6IP2iYbq1BlEivsSOv3HiVjp7c\x22\x2c\x20\x22shmodel\x5flink\x22\x3a\x20\x22https\x3a\x2f\x2fwww\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2faeEsOTtyv2\x2fDSC05908\x2eJPG\x22\x2c\x20\x22orig\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fdl\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2faeEsOTtyv2\x2fDSC05908\x2eJPG\x22\x2c\x20\x22path\x22\x3a\x20\x22\x2fCoworkBuffalo\x2fBeta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29\x2fDSC05908\x2eJPG\x22\x2c\x20\x22is\x5fvideo\x22\x3a\x20false\x2c\x20\x22preview\x5furl\x22\x3a\x20null\x2c\x20\x22filename\x22\x3a\x20\x22DSC05908\x2eJPG\x22\x7d\x2c\x20\x7b\x22thumbnail\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fphotos\x2d2\x2edropbox\x2ecom\x2ft\x2f0\x2fAAAguXsxhe\x5fUAx3F3gBtJnC6Hk8Edw8Off2kQd81X7Q4LQ\x2f10\x2f112488\x2fjpeg\x2f32x32\x2f2\x2f1348768800\x2f0\x2f2\x2fDSC05910\x2eJPG\x2fZDaiCo7PbK4TVVkZJqEV4MwdNa\x5fSZElOyPT0P85NZUY\x22\x2c\x20\x22shmodel\x5flink\x22\x3a\x20\x22https\x3a\x2f\x2fwww\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2fa5AM\x5f2OozF\x2fDSC05910\x2eJPG\x22\x2c\x20\x22orig\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fdl\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2fa5AM\x5f2OozF\x2fDSC05910\x2eJPG\x22\x2c\x20\x22path\x22\x3a\x20\x22\x2fCoworkBuffalo\x2fBeta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29\x2fDSC05910\x2eJPG\x22\x2c\x20\x22is\x5fvideo\x22\x3a\x20false\x2c\x20\x22preview\x5furl\x22\x3a\x20null\x2c\x20\x22filename\x22\x3a\x20\x22DSC05910\x2eJPG\x22\x7d\x2c\x20\x7b\x22thumbnail\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fphotos\x2d2\x2edropbox\x2ecom\x2ft\x2f0\x2fAADshbYhVFHQ7Tp8G\x5fbLtTopAKXp04N5aiIgdJMboooJfw\x2f10\x2f112488\x2fjpeg\x2f32x32\x2f2\x2f1348768800\x2f0\x2f2\x2fDSC05915\x2eJPG\x2f1j74hDZSJrC\x5fxJKn\x2dzPCvXaD3sWBpTmX5K0fiU1BDuQ\x22\x2c\x20\x22shmodel\x5flink\x22\x3a\x20\x22https\x3a\x2f\x2fwww\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2fFlV6oNfWEw\x2fDSC05915\x2eJPG\x22\x2c\x20\x22orig\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fdl\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2fFlV6oNfWEw\x2fDSC05915\x2eJPG\x22\x2c\x20\x22path\x22\x3a\x20\x22\x2fCoworkBuffalo\x2fBeta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29\x2fDSC05915\x2eJPG\x22\x2c\x20\x22is\x5fvideo\x22\x3a\x20false\x2c\x20\x22preview\x5furl\x22\x3a\x20null\x2c\x20\x22filename\x22\x3a\x20\x22DSC05915\x2eJPG\x22\x7d\x2c\x20\x7b\x22thumbnail\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fphotos\x2d6\x2edropbox\x2ecom\x2ft\x2f0\x2fAAChAkPgyfxhyyFpg1A38IzrHipHOCbyBfhAOpO5xbe8iA\x2f10\x2f112488\x2fjpeg\x2f32x32\x2f2\x2f1348768800\x2f0\x2f2\x2fDSC05918\x2eJPG\x2fgknxZ9ogSRCMtnC36vz7hOzj\x2d8\x5fWIG6agV2EqbpxoLc\x22\x2c\x20\x22shmodel\x5flink\x22\x3a\x20\x22https\x3a\x2f\x2fwww\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2f\x5fs9i9AS9Jd\x2fDSC05918\x2eJPG\x22\x2c\x20\x22orig\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fdl\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2f\x5fs9i9AS9Jd\x2fDSC05918\x2eJPG\x22\x2c\x20\x22path\x22\x3a\x20\x22\x2fCoworkBuffalo\x2fBeta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29\x2fDSC05918\x2eJPG\x22\x2c\x20\x22is\x5fvideo\x22\x3a\x20false\x2c\x20\x22preview\x5furl\x22\x3a\x20null\x2c\x20\x22filename\x22\x3a\x20\x22DSC05918\x2eJPG\x22\x7d\x2c\x20\x7b\x22thumbnail\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fphotos\x2d5\x2edropbox\x2ecom\x2ft\x2f0\x2fAADtgJVsrZoEznlSyFpeIpKeSTHG7wnyy\x2dPQjwgN\x5f\x5f0iKg\x2f10\x2f112488\x2fjpeg\x2f32x32\x2f2\x2f1348768800\x2f0\x2f2\x2fDSC05925\x2eJPG\x2fEzIdG4VPrBM7c9nvmh5y5naB3VBdm9raVyCba8\x5fFAFI\x22\x2c\x20\x22shmodel\x5flink\x22\x3a\x20\x22https\x3a\x2f\x2fwww\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2f\x2dkFTdYfTem\x2fDSC05925\x2eJPG\x22\x2c\x20\x22orig\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fdl\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2f\x2dkFTdYfTem\x2fDSC05925\x2eJPG\x22\x2c\x20\x22path\x22\x3a\x20\x22\x2fCoworkBuffalo\x2fBeta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29\x2fDSC05925\x2eJPG\x22\x2c\x20\x22is\x5fvideo\x22\x3a\x20false\x2c\x20\x22preview\x5furl\x22\x3a\x20null\x2c\x20\x22filename\x22\x3a\x20\x22DSC05925\x2eJPG\x22\x7d\x2c\x20\x7b\x22thumbnail\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fphotos\x2d5\x2edropbox\x2ecom\x2ft\x2f0\x2fAAANBmdhFtsbSoZpXjVwLQiOO7E3Sr3PdDcaiyb260niNA\x2f10\x2f112488\x2fjpeg\x2f32x32\x2f2\x2f1348768800\x2f0\x2f2\x2fDSC05926\x2eJPG\x2f8q8Ylex\x2dxpMuA413IUod6mJAYGLooPlyAvmmaBKshig\x22\x2c\x20\x22shmodel\x5flink\x22\x3a\x20\x22https\x3a\x2f\x2fwww\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2fmmewh1ZD2F\x2fDSC05926\x2eJPG\x22\x2c\x20\x22orig\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fdl\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2fmmewh1ZD2F\x2fDSC05926\x2eJPG\x22\x2c\x20\x22path\x22\x3a\x20\x22\x2fCoworkBuffalo\x2fBeta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29\x2fDSC05926\x2eJPG\x22\x2c\x20\x22is\x5fvideo\x22\x3a\x20false\x2c\x20\x22preview\x5furl\x22\x3a\x20null\x2c\x20\x22filename\x22\x3a\x20\x22DSC05926\x2eJPG\x22\x7d\x2c\x20\x7b\x22thumbnail\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fphotos\x2d6\x2edropbox\x2ecom\x2ft\x2f0\x2fAADhP6xBxipMtjgJ5KYfWC6ilFBetNU\x5f9x9nKqUB8p6cEw\x2f10\x2f112488\x2fjpeg\x2f32x32\x2f2\x2f1348768800\x2f0\x2f2\x2fDSC05928\x2eJPG\x2fA32\x5fUYtZtoyHSe2HmjE9DgKd9iwZTLiAyxq2NUJ2giw\x22\x2c\x20\x22shmodel\x5flink\x22\x3a\x20\x22https\x3a\x2f\x2fwww\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2f6qzr1g9EmA\x2fDSC05928\x2eJPG\x22\x2c\x20\x22orig\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fdl\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2f6qzr1g9EmA\x2fDSC05928\x2eJPG\x22\x2c\x20\x22path\x22\x3a\x20\x22\x2fCoworkBuffalo\x2fBeta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29\x2fDSC05928\x2eJPG\x22\x2c\x20\x22is\x5fvideo\x22\x3a\x20false\x2c\x20\x22preview\x5furl\x22\x3a\x20null\x2c\x20\x22filename\x22\x3a\x20\x22DSC05928\x2eJPG\x22\x7d\x2c\x20\x7b\x22thumbnail\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fphotos\x2d4\x2edropbox\x2ecom\x2ft\x2f0\x2fAAC8QkZunybksrge9wHrw1zAZ7YwQAUyoWuZVJGvxibiuA\x2f10\x2f112488\x2fjpeg\x2f32x32\x2f2\x2f1348768800\x2f0\x2f2\x2fDSC05933\x2eJPG\x2fI2udfKPV8AMYDzhksrOsZ9WOwZi7gEac1p7Ldlw9o\x2d8\x22\x2c\x20\x22shmodel\x5flink\x22\x3a\x20\x22https\x3a\x2f\x2fwww\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2fz7AWEUM1vM\x2fDSC05933\x2eJPG\x22\x2c\x20\x22orig\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fdl\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2fz7AWEUM1vM\x2fDSC05933\x2eJPG\x22\x2c\x20\x22path\x22\x3a\x20\x22\x2fCoworkBuffalo\x2fBeta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29\x2fDSC05933\x2eJPG\x22\x2c\x20\x22is\x5fvideo\x22\x3a\x20false\x2c\x20\x22preview\x5furl\x22\x3a\x20null\x2c\x20\x22filename\x22\x3a\x20\x22DSC05933\x2eJPG\x22\x7d\x2c\x20\x7b\x22thumbnail\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fphotos\x2d1\x2edropbox\x2ecom\x2ft\x2f0\x2fAACPezyOMzsvziBxLtoLHrwuJDIAmjrornnubaz3PLucKQ\x2f10\x2f112488\x2fjpeg\x2f32x32\x2f2\x2f1348768800\x2f0\x2f2\x2fDSC05938\x2eJPG\x2fBZUBNQSDjwO7dxxauOKJJAu0YE0luurM19rqvm9xatA\x22\x2c\x20\x22shmodel\x5flink\x22\x3a\x20\x22https\x3a\x2f\x2fwww\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2fviWglqjj7h\x2fDSC05938\x2eJPG\x22\x2c\x20\x22orig\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fdl\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2fviWglqjj7h\x2fDSC05938\x2eJPG\x22\x2c\x20\x22path\x22\x3a\x20\x22\x2fCoworkBuffalo\x2fBeta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29\x2fDSC05938\x2eJPG\x22\x2c\x20\x22is\x5fvideo\x22\x3a\x20false\x2c\x20\x22preview\x5furl\x22\x3a\x20null\x2c\x20\x22filename\x22\x3a\x20\x22DSC05938\x2eJPG\x22\x7d\x2c\x20\x7b\x22thumbnail\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fphotos\x2d4\x2edropbox\x2ecom\x2ft\x2f0\x2fAACNB\x5f5BXdQ4xyjshNVd0eUyLxGNIDSsYesFWFA1eLprkQ\x2f10\x2f112488\x2fjpeg\x2f32x32\x2f2\x2f1348768800\x2f0\x2f2\x2fDSC05940\x2eJPG\x2fWRmOHs\x2dOF6YwywDpcxdWLL\x5fHkfkc2dEnX22eWluOfcg\x22\x2c\x20\x22shmodel\x5flink\x22\x3a\x20\x22https\x3a\x2f\x2fwww\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2ftfmTW2tLK5\x2fDSC05940\x2eJPG\x22\x2c\x20\x22orig\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fdl\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2ftfmTW2tLK5\x2fDSC05940\x2eJPG\x22\x2c\x20\x22path\x22\x3a\x20\x22\x2fCoworkBuffalo\x2fBeta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29\x2fDSC05940\x2eJPG\x22\x2c\x20\x22is\x5fvideo\x22\x3a\x20false\x2c\x20\x22preview\x5furl\x22\x3a\x20null\x2c\x20\x22filename\x22\x3a\x20\x22DSC05940\x2eJPG\x22\x7d\x2c\x20\x7b\x22thumbnail\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fphotos\x2d4\x2edropbox\x2ecom\x2ft\x2f0\x2fAAApDD3nwEXZ4FHfen9RCwmnZoH2mBJPec\x2dVHb3Z\x2dzjAnA\x2f10\x2f112488\x2fjpeg\x2f32x32\x2f2\x2f1348768800\x2f0\x2f2\x2fDSC05953\x2eJPG\x2fRkXbDz16r3dFgPXpDKNmjjYq87Y9LtOA\x2d3HzhIUbULE\x22\x2c\x20\x22shmodel\x5flink\x22\x3a\x20\x22https\x3a\x2f\x2fwww\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2f7xfMs6FH33\x2fDSC05953\x2eJPG\x22\x2c\x20\x22orig\x5furl\x22\x3a\x20\x22https\x3a\x2f\x2fdl\x2edropbox\x2ecom\x2fsh\x2fuy0r6tkwvei8m7q\x2f7xfMs6FH33\x2fDSC05953\x2eJPG\x22\x2c\x20\x22path\x22\x3a\x20\x22\x2fCoworkBuffalo\x2fBeta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29\x2fDSC05953\x2eJPG\x22\x2c\x20\x22is\x5fvideo\x22\x3a\x20false\x2c\x20\x22preview\x5furl\x22\x3a\x20null\x2c\x20\x22filename\x22\x3a\x20\x22DSC05953\x2eJPG\x22\x7d\x5d')
+$('emsnippet-88e08481e466ac26').innerHTML = 'Beta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29'.em_snippet(50, 0.750).escapeHTML();
+$('emsnippet-20c17e6db114ca6b').innerHTML = 'Beta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29'.em_snippet(35, 0.750).escapeHTML();
+$('emsnippet-32be39e4a7f018ef').innerHTML = 'Beta\x20Photos\x20\x28by\x20Nicholas\x20Barone\x29'.em_snippet(35, 0.750).escapeHTML();
+$('emsnippet-bf5be8d052b21ab1').innerHTML = '1\x20\x2d\x20Outside\x20Door\x20on\x20Delaware\x2eJPG'.em_snippet(40, 0.750).escapeHTML();
+$('emsnippet-f2e6d76ed26f1d2e').innerHTML = '2\x20\x2d\x20Hallway\x2eJPG'.em_snippet(40, 0.750).escapeHTML();
+$('emsnippet-6ed68eebac987cbb').innerHTML = '3\x20\x2d\x20Front\x20Door\x2eJPG'.em_snippet(40, 0.750).escapeHTML();
+$('emsnippet-604a55eb044dac43').innerHTML = 'DSC05905\x2eJPG'.em_snippet(40, 0.750).escapeHTML();
+$('emsnippet-b0e41f57e76cb8e7').innerHTML = 'DSC05906\x2eJPG'.em_snippet(40, 0.750).escapeHTML();
+$('emsnippet-6ff84a03ac28e53c').innerHTML = 'DSC05908\x2eJPG'.em_snippet(40, 0.750).escapeHTML();
+$('emsnippet-f1ce25f3bad31dbd').innerHTML = 'DSC05910\x2eJPG'.em_snippet(40, 0.750).escapeHTML();
+$('emsnippet-231a4f9981be3a16').innerHTML = 'DSC05915\x2eJPG'.em_snippet(40, 0.750).escapeHTML();
+$('emsnippet-7114842ca6f5a5d0').innerHTML = 'DSC05918\x2eJPG'.em_snippet(40, 0.750).escapeHTML();
+$('emsnippet-f871d0ace354681f').innerHTML = 'DSC05925\x2eJPG'.em_snippet(40, 0.750).escapeHTML();
+$('emsnippet-5784887b2a53e531').innerHTML = 'DSC05926\x2eJPG'.em_snippet(40, 0.750).escapeHTML();
+$('emsnippet-7bcc8a69f2da86d5').innerHTML = 'DSC05928\x2eJPG'.em_snippet(40, 0.750).escapeHTML();
+$('emsnippet-9bf02b3202a4462a').innerHTML = 'DSC05933\x2eJPG'.em_snippet(40, 0.750).escapeHTML();
+$('emsnippet-94c6b4a15d6ba08d').innerHTML = 'DSC05938\x2eJPG'.em_snippet(40, 0.750).escapeHTML();
+$('emsnippet-af2944530d3392b8').innerHTML = 'DSC05940\x2eJPG'.em_snippet(40, 0.750).escapeHTML();
+$('emsnippet-7b08d227d6b751a1').innerHTML = 'DSC05953\x2eJPG'.em_snippet(40, 0.750).escapeHTML();                        });
+                    }</script></body></html>
